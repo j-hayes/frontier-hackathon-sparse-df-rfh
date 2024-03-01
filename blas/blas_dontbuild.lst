@@ -1,0 +1,10 @@
+examples_list = \
+gemm \
+gemv \
+axpy \
+iamax \
+gemm_usm \
+copy_batch_usm \
+gemm_batch \
+gemv_batch_usm \
+gemm_usm_multi_stack \
