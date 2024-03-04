@@ -176,11 +176,11 @@ void build_fock_cpu(){
 
     // std::cout << "Q: " << Q<< std::endl;
     double* J = calculate_J(lower_triangle_three_center_integrals, density, Q, triangle_length);
-
-    // for (int ii = 0; ii < 10; ii++){
-    //     std::cout << screened_triangular_indices[ii] << " " << std::endl;
-    // }
-
+    //print J
+    
+    for(int i = 0; i < triangle_length; i++){
+        std::cout << J[i] << " " << std::endl;
+    }
 }
 
 

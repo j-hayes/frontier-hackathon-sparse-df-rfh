@@ -64,35 +64,17 @@ double* calculate_J(double * B, double * density, int Q, int triangle_length){
     // V[Q] = B(Q|pq)*density(p|q) coulomb intermediate
 
     // print size of J
-    std::cout << "triangle_length in main J func = " << triangle_length << std::endl;
-    //print Q
-    std::cout << "Q in main J func = " << Q << std::endl;
     cblas_dgemv(layout, transp, Q, triangle_length, 1.0, B, triangle_length, density, 1, 0.0, V, 1);
     
-    std::cout << "Checking V result" << std::endl;
-    std::cout << "Q in main J func = " << Q << std::endl;
-    
-    // check_V_result(V, Q);
-    // print the first 20 elements of V
-    for (int i = 0; i < Q; i++){
-        std::cout << "V[" << i << "] = " << V[i] << std::endl;
-    }
-    
-
-    
-
     double* J = new double[triangle_length];
     
     // // J(pq) = B(pq|Q)*V[Q] coulomb matrix 
     cblas_dgemv(layout, CblasTrans, Q, triangle_length, 2.0, B, triangle_length, V, 1, 0.0, J, 1);
     
-    std::cout << "Checking J result" << std::endl;
-
+    
     // check_J_result(J, triangle_length);
     //print the first 20 elements of J
-    for (int i = 0; i < triangle_length; i++){
-        std::cout << "J[" << i << "] = " << J[i] << std::endl;
-    }
+
     return J;
 
 }
