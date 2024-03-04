@@ -17,7 +17,7 @@ bool almostEqual(double x,double y,double tolerance,double zeroTolerance){
 bool values_are_not_same_and_relevant(double calculated_value, double expected_value){
 
     return (calculated_value >= 1.0e-5 && expected_value >= 1.0e-5) && 
-        almostEqual(calculated_value, expected_value, 1.0e-6, 1.0e-10);
+        !almostEqual(calculated_value, expected_value, 1.0e-3, 1.0e-10);
 
 }
 

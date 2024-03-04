@@ -18,7 +18,7 @@ struct hdf5_data_with_dims
 const H5std_string DATASET_NAME("data/values");
 
 template <typename T>
-hdf5_data_with_dims<T> read_file_data(std::string const &file_name) {
+hdf5_data_with_dims<T>* read_file_data(std::string const &file_name) {
      // Open the HDF5 file
      
 
@@ -40,23 +40,24 @@ hdf5_data_with_dims<T> read_file_data(std::string const &file_name) {
 
     // Allocate array to hold the data
     
-    hdf5_data_with_dims<T> hdf5_data;
-    hdf5_data.data = new T[dims[0] * dims[1]];
-    hdf5_data.M = dims[0];
-    hdf5_data.N = dims[1];
+    hdf5_data_with_dims<T>* hdf5_data;
+    hdf5_data = new hdf5_data_with_dims<T>;
+    hdf5_data->data = new T[dims[0] * dims[1]];
+    hdf5_data->M = dims[0];
+    hdf5_data->N = dims[1];
 
     // get data type 
 
     // if type T is integer  from template 
 
     if (std::is_same<T, int>::value) {
-        dataset.read(hdf5_data.data, H5::PredType::NATIVE_INT);
+        dataset.read(hdf5_data->data, H5::PredType::NATIVE_INT);
     }
     else if (std::is_same<T, float>::value) {
-        dataset.read(hdf5_data.data, H5::PredType::NATIVE_FLOAT);
+        dataset.read(hdf5_data->data, H5::PredType::NATIVE_FLOAT);
     }
     else if (std::is_same<T, double>::value) {
-        dataset.read(hdf5_data.data, H5::PredType::NATIVE_DOUBLE);
+        dataset.read(hdf5_data->data, H5::PredType::NATIVE_DOUBLE);
     }
     else {
         throw std::runtime_error("Unsupported data type for hdf5 read");

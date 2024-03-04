@@ -25,7 +25,7 @@ using namespace H5;
 // #ifndef H5_NO_NAMESPACE
 //     using namespace H5;
 // #endif
-// // const H5std_string FILE_NAME( "/home/jacksonjhayes/source/mklexamples/dpcpp/DF-RHF_MiniApp/data/basis_function_screen_matrix.h5" );
+// // const H5std_string FILE_NAME( data_path+"basis_function_screen_matrix.h5" );
 // // const H5std_string DATASET_NAME( "IntArray" );
 // // const int    NX_SUB = 3;        // hyperslab dimensions
 // // const int    NY_SUB = 4;
