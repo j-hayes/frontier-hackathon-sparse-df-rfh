@@ -8,6 +8,8 @@
 #include "index_functions.hpp"
 #include "error_checking.hpp"
 #include "constants.hpp"
+#include "run_metadata.hpp"
+#include "scf_data.hpp"
 
 bool check_density_result(double* result, int size, double tol){
     //get density data from file 
@@ -28,18 +30,22 @@ bool check_density_result(double* result, int size, double tol){
     return true;
 }
 
-double* calculate_density(int p, int occ, double * occupied_orbital_coefficients,
-    bool* basis_function_screen_matrix, 
-    int* screened_triangular_indices, int screened_triangular_indices_count){
+void calculate_density(run_metadata* metadata, scf_data* scfdata,
+    std::vector<bool>* basis_function_screen_matrix, std::vector<int>* screened_triangular_indices){
     
     // set cblas_layout to CblasRowMajor
     CBLAS_LAYOUT layout = CblasRowMajor;
     //set transpose to no transpose
     CBLAS_TRANSPOSE transp = CblasNoTrans;
 
+    int p = metadata->p;
+    int occ = metadata->occ;
+    int screened_triangular_indices_count = metadata->triangle_length;
+
+
 
     //allocate density array 
-    double* density = new double[p * p];
+    std::vector<double>* density = new std::vector<double>(p*p);
 
     // std::cout << "Calculating density" << std::endl;
     std::cout << "p = " << p << std::endl;
@@ -55,7 +61,7 @@ double* calculate_density(int p, int occ, double * occupied_orbital_coefficients
     // }
 
     cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasTrans, p, p, occ, 1.0, 
-    occupied_orbital_coefficients, occ, occupied_orbital_coefficients, occ, 0.0, density, p);
+    scfdata->occupied_orbital_coefficients->data(), occ, scfdata->occupied_orbital_coefficients->data(), occ, 0.0, density->data(), p);
 
     //print the top 10x10 elements of density
     std::cout << "Density" << std::endl;
@@ -67,36 +73,26 @@ double* calculate_density(int p, int occ, double * occupied_orbital_coefficients
     //     std::cout << std::endl;
     // }
     int oned_index  = 0;
-    double* screened_density = new double[screened_triangular_indices_count];
-
-    std::cout << "Calculating screened density" << std::endl;
-    std::cout << "density[0] = " << density[0] << std::endl;
-    std::cout << "screened_density[0] = " << screened_density[0] << std::endl;
-    std::cout << "basis_function_screen_matrix[0] = " << basis_function_screen_matrix[0] << std::endl;
-    std::cout << "screened_triangular_indices[0] = " << screened_triangular_indices[0] << std::endl;
-
+    std::vector<bool>& screen_vector = *basis_function_screen_matrix;
+    std::vector<int>& triangular_indicies_vector = *screened_triangular_indices;
+    std::vector<double>& density_vector = *(scfdata->density);
     for (int ii = 0; ii < p; ii++){
         for (int jj = 0; jj < p; jj++){
             if (ii > jj){
                 continue;
             }
             oned_index = get_1d_index(jj, ii, p);
-            if (basis_function_screen_matrix[oned_index]){
+            if (screen_vector[oned_index]){
                 if(ii == jj){
-                    screened_density[screened_triangular_indices[oned_index]] = density[oned_index];
+                    density_vector[triangular_indicies_vector[oned_index]] = 1.0*density->data()[oned_index];
                 }
                 else{
-                    screened_density[screened_triangular_indices[oned_index]] = 2.0*density[oned_index];
+                    density_vector[triangular_indicies_vector[oned_index]] = 2.0*density->data()[oned_index];
                 }
-
-            }
+             }
         }
     }
-
     std::cout << "Screened density calculated" << std::endl;
-
-
-    return screened_density;
 }
 
 #endif //__CALCULATE_DENSITY_HPP__

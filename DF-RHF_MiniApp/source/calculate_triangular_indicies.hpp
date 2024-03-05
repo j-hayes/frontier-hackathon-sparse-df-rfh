@@ -3,11 +3,12 @@
 
 #include "index_functions.hpp"
 #include "constants.hpp"
+#include "run_metadata.hpp"
+#include <vector>
 
-int* calculate_triangular_indicies(int p, bool* basis_function_screen_matrix, int* triangle_length){
-    int* screened_triangular_indices = new int[p*p];
-
-    int screened_triangular_indices_count = 0;//todo move this so it is calculated in setup step not calculation step
+std::vector<int>* calculate_triangular_indicies(run_metadata* metadata, std::vector<bool>* basis_function_screen_matrix){
+    
+    std::vector<int>* screened_triangular_indices = new std::vector<int>(metadata->p * metadata->p); 
     int oned_index = 0;
     int inverse_index = 0;
 
@@ -15,25 +16,20 @@ int* calculate_triangular_indicies(int p, bool* basis_function_screen_matrix, in
     // std::cout << "basis_function_screen_matrix[1] = " << basis_function_screen_matrix[1] << std::endl;
     // std::cout << "p = " << p << std::endl;
 
-    for (int ii = 0; ii < p; ii++){
-        for (int jj = 0; jj < p; jj++){
-            oned_index = get_1d_index(ii, jj, p);
-            if (jj >= ii && basis_function_screen_matrix[oned_index]){
-                inverse_index = get_1d_index(jj,ii, p);
-                // std::cout << "ii = " << ii << " jj = " << jj << " oned_index = " << oned_index
-                //      << " inverse_index = " << inverse_index 
-                //      << "screened_triangular_indices_count " << screened_triangular_indices_count 
-                //      << std::endl;
-                screened_triangular_indices[oned_index] = screened_triangular_indices_count;      
-                screened_triangular_indices[inverse_index] = screened_triangular_indices_count;
-                screened_triangular_indices_count++;
+    std::vector<bool>& basis_function_screen_data = *basis_function_screen_matrix;
+    for (int ii = 0; ii < metadata->p; ii++){
+        for (int jj = 0; jj < metadata->p; jj++){
+            oned_index = get_1d_index(ii, jj, metadata->p);
+            if (jj >= ii && basis_function_screen_data[oned_index]){
+                inverse_index = get_1d_index(jj,ii, metadata->p);
+                screened_triangular_indices->data()[oned_index] = metadata->triangle_length;      
+                screened_triangular_indices->data()[inverse_index] = metadata->triangle_length;
+                (metadata->triangle_length)++;
             }
         }
     }
 
-    std::cout << "done with calculating screened_triangular_indices" << std::endl;
-    std::cout << "screened_triangular_indices_count = " << screened_triangular_indices_count << std::endl;
-    // *triangle_length = screened_triangular_indices_count;
+    
     return screened_triangular_indices;
 }
 

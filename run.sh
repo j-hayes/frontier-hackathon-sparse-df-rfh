@@ -1,0 +1,1 @@
+./build/DF-RHF_MiniApp-df_fock_build &> ./testoutput/build_fock_cpu.log
