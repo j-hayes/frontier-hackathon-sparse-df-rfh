@@ -18,7 +18,8 @@
 #include "calculate_density.hpp"
 #include "calculate_B.hpp"
 #include "calculate_J.hpp"
-#include "calculate_triangular_indicies.hpp"
+#include "calculate_K.hpp"
+#include "get_screening_data.hpp"
 #include "constants.hpp"
 #include "constants.hpp"
 #include "run_metadata.hpp"
@@ -44,7 +45,6 @@ hdf5_data_with_dims<double>* get_three_center_integrals(){
 }
 
 void get_lower_triangle_three_center_integrals(run_metadata* metadata, scf_data* scfdata,  
- std::vector<int>* triangle_indices, 
  std::vector<double>* three_center_integrals,
  std::vector<int>* sparse_pq_index_map, int unscreened_pq_count){
 
@@ -52,7 +52,9 @@ void get_lower_triangle_three_center_integrals(run_metadata* metadata, scf_data*
     int Q = metadata->Q;
     int occ = metadata->occ;
     int triangle_length = metadata->triangle_length;
-
+    
+    std::vector<int>* triangle_indices = metadata->screened_triangular_indicies;
+    
     std::cout << "p = " << p << std::endl;
     std::cout << "Q = " << Q << std::endl;
     std::cout << "occ = " << occ << std::endl;
@@ -181,10 +183,9 @@ void build_fock_cpu(){
     print_start_message(metadata->p, metadata->Q, metadata->occ); 
 
     //calculate the triangular indicies
-    std::cout << "calculating triangular indicies" << std::endl;
+    std::cout << "calculating screening metadata" << std::endl;
 
-    std::vector<int>* screened_triangular_indices = calculate_triangular_indicies(metadata,
-         basis_function_screen_matrix_data->data);
+    get_screening_data(metadata, scfdata, basis_function_screen_matrix_data->data);
 
     std::cout << "tlength = " << metadata->triangle_length << std::endl;
     std::cout << "triangular indicies calculated" << std::endl;
@@ -199,14 +200,14 @@ void build_fock_cpu(){
     scfdata->density = new std::vector<double>(metadata->triangle_length);
     scfdata->three_center_integrals = new std::vector<double>(metadata->Q*metadata->triangle_length);
     
-    get_lower_triangle_three_center_integrals(metadata, scfdata, screened_triangular_indices, three_center_integrals_data->data,
+    get_lower_triangle_three_center_integrals(metadata, scfdata, three_center_integrals_data->data,
      sparse_pq_index_map->data, three_center_integrals_data->N);
        
     calculate_B(metadata, scfdata, two_center_integrals_data->data); //B is a reference to the updated three_center_integrals_data->data
 
     std::cout << "calculating density" << std::endl;
     calculate_density(metadata, scfdata,
-        basis_function_screen_matrix_data->data, screened_triangular_indices);
+        basis_function_screen_matrix_data->data);
 
 
     std::cout << "print density"    << std::endl;
@@ -228,6 +229,8 @@ void build_fock_cpu(){
     // // for (int ii = 0; ii < 10; ii++){
     // //     std::cout << screened_triangular_indices[ii] << " " << std::endl;
     // // }
+
+    calculate_K(scfdata, metadata, basis_function_screen_matrix_data->data);
 
     delete two_center_integrals_data;
     delete three_center_integrals_data;

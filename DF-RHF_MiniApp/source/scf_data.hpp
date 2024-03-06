@@ -14,6 +14,8 @@ struct scf_data {
     std::vector<double>* K;
     std::vector<double>* W;
     std::vector<double>* two_electron_fock;
+    std::vector<std::vector<double>>* non_zero_coefficients;
+
 };
 
 #endif // !1

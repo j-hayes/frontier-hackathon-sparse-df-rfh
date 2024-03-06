@@ -31,13 +31,13 @@ bool check_density_result(double* result, int size, double tol){
 }
 
 void calculate_density(run_metadata* metadata, scf_data* scfdata,
-    std::vector<bool>* basis_function_screen_matrix, std::vector<int>* screened_triangular_indices){
+    std::vector<bool>* basis_function_screen_matrix){
     
     // set cblas_layout to CblasRowMajor
     CBLAS_LAYOUT layout = CblasRowMajor;
     //set transpose to no transpose
     CBLAS_TRANSPOSE transp = CblasNoTrans;
-
+    std::vector<int>* screened_triangular_indices = metadata->screened_triangular_indicies;
     int p = metadata->p;
     int occ = metadata->occ;
     int screened_triangular_indices_count = metadata->triangle_length;
