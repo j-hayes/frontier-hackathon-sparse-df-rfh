@@ -96,9 +96,9 @@
 void calculate_B(run_metadata* metadata, scf_data* scfdata, std::vector<double>* teri){
     
     int info = 0;
-    int Q = 133;
+    int Q = metadata->Q;
     int p = metadata->p;
-    int triangle_length = 28;
+    int triangle_length = metadata->triangle_length;
 
     std::cout << "Calculating B" << std::endl;
     std::cout << "Q = " << Q << std::endl;
@@ -107,6 +107,17 @@ void calculate_B(run_metadata* metadata, scf_data* scfdata, std::vector<double>*
     std::cout << "twoc_int[0] = " << scfdata->two_center_integrals->data()[0] << std::endl;
     std::cout << "three[0] = " << scfdata->three_center_integrals->data()[0] << std::endl;
     std::cout << "info = " << info << std::endl;
+
+    //print top 10x10 of two_center_integrals
+    std::cout << "top 10x10 of two_center_integrals" << std::endl;
+    int index = 0;
+
+    for (int i = 0; i < 10; i++){
+        for (int j = 0; j < 10; j++){
+            std::cout << scfdata->two_center_integrals->data()[index++] << " ";
+        }
+        std::cout << std::endl;
+    }
 
 
  
@@ -139,19 +150,11 @@ void calculate_B(run_metadata* metadata, scf_data* scfdata, std::vector<double>*
 
     //print the top 10x10 of two center integrals
 
-    std::cout << "Calculating B" << std::endl;
-    std::cout << "Q = " << Q << std::endl;
-    std::cout << "p = " << p << std::endl;
-    std::cout << "triangle_length = " << triangle_length << std::endl;
-
-    std::cout << "two_center_integrals[Q*Q] = " << scfdata->two_center_integrals->data()[(Q*Q)-1] << std::endl;
-    std::cout << "three_center_integrals[Q*triangle_length] = " << scfdata->three_center_integrals->data()[(Q*triangle_length)-1] << std::endl;
-
+   
     cblas_dtrmm(CblasRowMajor, CblasLeft, CblasUpper, CblasTrans, CblasNonUnit, Q, triangle_length, 1.0, 
         scfdata->two_center_integrals->data(),
         Q, scfdata->three_center_integrals->data(), triangle_length);
-    std::cout << "Done with B calculation" << std::endl;
-
+   
     //print top 10x10 of threeeri__
     for (int i = 0; i < 10; i++){
         for (int j = 0; j < 10; j++){

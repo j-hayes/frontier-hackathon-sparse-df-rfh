@@ -49,19 +49,6 @@ void calculate_density(run_metadata* metadata, scf_data* scfdata,
     //allocate density array 
     std::vector<double>* density = new std::vector<double>(p*p);
 
-    // std::cout << "Calculating density" << std::endl;
-    std::cout << "p = " << p << std::endl;
-    std::cout << "occ = " << occ << std::endl;
-    std::cout << "screened_triangular_indices_count = " << screened_triangular_indices_count << std::endl;
-
-    //print the occupied_orbital_coefficients 
-    // for (int i = 0; i < p; i++){
-    //     for (int j = 0; j < occ; j++){
-    //         std::cout << occupied_orbital_coefficients[get_1d_index(i, j, p)] << " ";
-    //     }
-    //     std::cout << std::endl;
-    // }
-
     int M = p;
     int N = p;
     int K = occ;
@@ -84,13 +71,7 @@ void calculate_density(run_metadata* metadata, scf_data* scfdata,
 
     //print the top 10x10 elements of density
     std::cout << "Density" << std::endl;
-    
-    // for (int i = 0; i < 10; i++){
-    //     for (int j = 0; j < 10; j++){
-    //         std::cout << density[get_1d_index(i, j, p)] << " ";
-    //     }
-    //     std::cout << std::endl;
-    // }
+   
     int oned_index  = 0;
     std::vector<bool>& screen_vector = *basis_function_screen_matrix;
     std::vector<int>& triangular_indicies_vector = *screened_triangular_indices;

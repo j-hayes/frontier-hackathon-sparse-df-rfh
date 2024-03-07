@@ -19,6 +19,7 @@
 #include "calculate_B.hpp"
 #include "calculate_J.hpp"
 #include "calculate_K.hpp"
+#include "calculate_F.hpp"
 #include "get_screening_data.hpp"
 #include "constants.hpp"
 #include "constants.hpp"
@@ -62,8 +63,8 @@ void get_lower_triangle_three_center_integrals(run_metadata* metadata, scf_data*
 
     //print the sparse_pq_index_map
     std::cout << "sparse_pq_index_map" << std::endl;
-    for (int i = 0; i < p; i++){
-        for (int j = 0; j < p; j++){
+    for (int i = 0; i < 10; i++){
+        for (int j = 0; j < 10; j++){
             std::cout << sparse_pq_index_map->data()[get_1d_index(i, j, p)] << " ";
         }
         std::cout << std::endl;
@@ -185,6 +186,7 @@ void build_fock_cpu(){
     //calculate the triangular indicies
     std::cout << "calculating screening metadata" << std::endl;
 
+    //get pointer to basis_function_screen_matrix_data->data
     get_screening_data(metadata, scfdata, basis_function_screen_matrix_data->data);
 
     std::cout << "tlength = " << metadata->triangle_length << std::endl;
@@ -200,6 +202,7 @@ void build_fock_cpu(){
     scfdata->density = new std::vector<double>(metadata->triangle_length);
     scfdata->three_center_integrals = new std::vector<double>(metadata->Q*metadata->triangle_length);
     
+
     get_lower_triangle_three_center_integrals(metadata, scfdata, three_center_integrals_data->data,
      sparse_pq_index_map->data, three_center_integrals_data->N);
        
@@ -213,7 +216,7 @@ void build_fock_cpu(){
     std::cout << "print density"    << std::endl;
 
     std::vector<double>& density = *scfdata->density;
-    for(int i =0; i<metadata->triangle_length; i++){
+    for(int i =0; i<20; i++){
         std::cout <<density[i] << " " << std::endl;
     }
 
@@ -231,6 +234,8 @@ void build_fock_cpu(){
     // // }
 
     calculate_K(scfdata, metadata, basis_function_screen_matrix_data->data);
+
+    calculate_F(scfdata, metadata, basis_function_screen_matrix_data->data);
 
     delete two_center_integrals_data;
     delete three_center_integrals_data;

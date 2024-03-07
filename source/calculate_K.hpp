@@ -81,33 +81,12 @@ void calculate_K(scf_data* scfdata, run_metadata* metadata, std::vector<bool>* b
     
     //print the top 10x10 elements of K
     std::cout << "K" << std::endl;
-    for (int i = 0; i < p; i++){
-        for (int j = 0; j < p; j++){
+    for (int i = 0; i < 20; i++){
+        for (int j = 0; j < 20; j++){
             std::cout << scfdata->K->data()[get_1d_index(i, j, p)] << " ";
         }
         std::cout << std::endl;
     }
 }
-
-/*
-
-function calculate_W_from_trianglular_screened(B, p,i,occupied_orbital_coefficients, basis_function_screen_matrix, screened_triangular_indices, non_zero_coefficients, W)
-    blas_threads = BLAS.get_num_threads()
-    BLAS.set_num_threads(1)
-    Threads.@threads for pp in 1:p
-        non_zero_r_index = 1
-        for r in eachindex(view(screened_triangular_indices, :, pp))
-            if basis_function_screen_matrix[r,pp] 
-                non_zero_coefficients[pp][non_zero_r_index, :] .= occupied_orbital_coefficients[r,:] 
-                non_zero_r_index += 1
-            end
-        end
-        indices = [x for x in view(screened_triangular_indices, :, pp) if x != 0]
-        BLAS.gemm!('N', 'N', 1.0,  B[:, indices], non_zero_coefficients[pp], 0.0, view(W, :, :, pp))
-    end
-    BLAS.set_num_threads(blas_threads)
-end
-*/
-
 
 #endif //__calculate_K_HPP__ 

@@ -92,11 +92,11 @@ void calculate_J(scf_data* scfdata, run_metadata* metadata){
 
     std::cout << "Calculating V" << std::endl;
     // print out the density array 
-    for (int i = 0; i < triangle_length; i++){
-        std::cout << "density[" << i << "] = " << scfdata->density->data()[i] << std::endl;
-    }
+    // for (int i = 0; i < 10; i++){
+    //     std::cout << "density[" << i << "] = " << scfdata->density->data()[i] << std::endl;
+    // }
 
-    //print the top 10x10 of three_center_integrals
+    //print the top 10x10 of three_center_integrals i.e. B matrix
     for (int i = 0; i < 10; i++){
         for (int j = 0; j < 10; j++){
             std::cout << scfdata->three_center_integrals->data()[get_1d_index(i, j, triangle_length)] << " ";
@@ -110,7 +110,7 @@ void calculate_J(scf_data* scfdata, run_metadata* metadata){
     // std::cout << "Checking V result" << std::endl;    
     // // check_V_result(V, Q);
     // // print the first 20 elements of V
-    for (int i = 0; i < Q; i++){
+    for (int i = 0; i < 10; i++){
         std::cout << "V[" << i << "] = " << scfdata->V->data()[i] << std::endl;
     }
     scfdata->J = new std::vector<double>(triangle_length);
@@ -123,7 +123,7 @@ void calculate_J(scf_data* scfdata, run_metadata* metadata){
 
     // // check_J_result(J, triangle_length);
     // //print the first 20 elements of J
-    for (int i = 0; i < triangle_length; i++){
+    for (int i = 0; i < 20; i++){
         std::cout << "J[" << i << "] = " << scfdata->J->data()[i] << std::endl;
     }
 }
