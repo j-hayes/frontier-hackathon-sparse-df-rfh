@@ -21,4 +21,8 @@ bool values_are_not_same_and_relevant(double calculated_value, double expected_v
 
 }
 
+bool test_dummy(int x, int y) {
+    return true;
+}
+
 #endif // !error_checking_hpp

@@ -9,11 +9,11 @@
 // #include <iterator>
 
 // #include <CL/sycl.hpp>
-#include "oneapi/mkl/blas.hpp"
-#include "mkl.h"
+//#include "oneapi/mkl/blas.hpp"
+//#include "mkl.h"
 #include "read_hdf5_file.hpp"
 #include <string>
-#include "mkl.h"
+//#include "mkl.h"
 #include "index_functions.hpp"
 #include "calculate_density.hpp"
 #include "calculate_B.hpp"

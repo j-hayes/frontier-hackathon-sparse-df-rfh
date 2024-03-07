@@ -1,0 +1,1514 @@
+/usr/bin/luac5.3: ...me/jahyes1/.cache/lmod/spiderT.frontier_x86_64_Linux.lua:64103: unexpected symbol near '='
+
+-------------------------------------------------------------------------------------------------------------------
+The following is a list of the modules and extensions currently available:
+-------------------------------------------------------------------------------------------------------------------
+  DefApps: DefApps/default
+
+  DefApps-spi: DefApps-spi/default
+
+  PrgEnv-amd: PrgEnv-amd/8.3.3, PrgEnv-amd/8.4.0, PrgEnv-amd/8.5.0
+
+  PrgEnv-cray: PrgEnv-cray/8.3.3, PrgEnv-cray/8.4.0, PrgEnv-cray/8.5.0
+
+  PrgEnv-cray-amd: PrgEnv-cray-amd/8.3.3, PrgEnv-cray-amd/8.4.0, PrgEnv-cray-amd/8.5.0
+
+  PrgEnv-gnu: PrgEnv-gnu/8.3.3, PrgEnv-gnu/8.4.0
+
+  PrgEnv-gnu-amd: PrgEnv-gnu-amd/8.3.3, PrgEnv-gnu-amd/8.4.0, PrgEnv-gnu-amd/8.5.0
+
+  adiak: adiak/0.2.2-cyaxw
+
+  adios: adios/1.13.1
+
+  adios2: adios2/2.8.1, adios2/2.8.3, adios2/2.9.0-bvinz, adios2/2.9.0-lm3ut, adios2/2.9.0-wsnlj, adios2/2.9.0
+
+  adlbx: adlbx/1.0.0-op7k7
+
+  afar: afar/rocm-afar-1583, afar/rocm-afar-1637, afar/rocm-afar-1691, afar/rocm-afar-1714, afar/rocm-afar-1830, ...
+
+  alquimia: alquimia/1.0.10
+
+  aluminum: aluminum/1.3.0-ab3pf
+
+  amd: amd/4.5.2, amd/5.1.0, amd/5.2.0, amd/5.3.0, amd/5.4.0, amd/5.4.3, amd/5.5.1, amd/5.6.0, amd/5.7.0, ...
+
+  amd-mixed: amd-mixed/4.5.2, amd-mixed/5.1.0, amd-mixed/5.2.0, amd-mixed/5.3.0, amd-mixed/5.4.0, amd-mixed/5.4.3, ...
+
+  aml: aml/0.2.0
+
+  amrex: amrex/21.11-cpu, amrex/21.11, amrex/22.02-cpu, amrex/22.02, amrex/22.05-cpu, amrex/22.05, amrex/22.11-cpu, ...
+
+  ant: ant/1.10.13-aqjqt
+
+  antlr: antlr/2.7.7-domw6
+
+  apex: apex/amd_rocm_5.2.0, apex/amd_rocm_5.3.0, apex/amd_rocm_5.4.3, apex/amd_rocm_5.5.1, apex/amd_rocm_5.7.0, ...
+
+  apr: apr/1.7.0
+
+  apr-util: apr-util/1.6.1
+
+  arborx: arborx/1.1-cpu, arborx/1.2-cpu, arborx/1.2, arborx/1.3-rocm, arborx/1.3
+
+  archer: archer/2.0.0
+
+  argobots: argobots/1.1
+
+  arpack-ng: arpack-ng/3.9.0-gc5qf
+
+  ascent: ascent/0.7.1, ascent/0.8.0, ascent/0.9.0
+
+  asio: asio/1.21.0-zns3r
+
+  at-spi2-atk: at-spi2-atk/2.38.0
+
+  at-spi2-core: at-spi2-core/2.40.1
+
+  atk: atk/2.36.0
+
+  atp: atp/3.14.11, atp/3.14.16, atp/3.14.18, atp/3.15.0, atp/3.15.1, atp/3.15.2
+
+  autoconf: autoconf/2.69-thxbz, autoconf/2.69
+
+  autoconf-archive: autoconf-archive/2019.01.06, autoconf-archive/2023.02.20-6dynq
+
+  automake: automake/1.16.3, automake/1.16.5, automake/1.16.5-7rbig
+
+  axl: axl/0.8.0-enbgc
+
+  axom: axom/0.7.0
+
+  bazel: bazel/4.0.0
+
+  bdftopcf: bdftopcf/1.0.5
+
+  berkeley-db: berkeley-db/18.1.40-gqdva
+
+  binutils: binutils/2.40-6hk4v
+
+  bison: bison/3.7.6, bison/3.8.2-cckwe, bison/3.8.2
+
+  bitgroomingz: bitgroomingz/2022-10-14-ioom7
+
+  blaspp: blaspp/2022.07.00-lypwq, blaspp/2022.07.00-rocm-jgfyq
+
+  blt: blt/0.5.2-2iygx
+
+  bolt: bolt/2.0
+
+  boost: boost/1.79.0-cxx17, boost/1.79.0, boost/1.82.0-b4cym, boost/1.82.0-fputk, boost/1.82.0-i6cqv, ...
+
+  butterflypack: butterflypack/2.2.2
+
+  bzip2: bzip2/1.0.8-gcwem, bzip2/1.0.8
+
+  c-blosc: c-blosc/1.21.2-upju6, c-blosc/1.21.2-xmadu
+
+  cabana: cabana/0.4.0, cabana/0.5.0-rocm, cabana/0.5.0
+
+  cairo: cairo/1.16.0-pdf, cairo/1.16.0-X-pdf
+
+  caliper: caliper/2.9.0-rocm, caliper/2.9.0
+
+  camp: camp/2022.10.1-aoxto, camp/2022.10.1-rocm-oqimw, camp/2022.10.1-uhuaq
+
+  ccache: ccache/4.4.2, ccache/4.5.1
+
+  cce: cce/14.0.1, cce/14.0.2, cce/15.0.0, cce/15.0.1, cce/16.0.0, cce/16.0.1, cce/17.0.0
+
+  cce-mixed: cce-mixed/14.0.1, cce-mixed/14.0.2, cce-mixed/15.0.0, cce-mixed/15.0.1, cce-mixed/16.0.0, ...
+
+  cdo: cdo/2.0.5-aec, cdo/2.0.5
+
+  cereal: cereal/1.3.0-bytm7
+
+  cgal: cgal/4.13-nmipr
+
+  chai: chai/2.4.0-cpu, chai/2.4.0, chai/2022.03.0-rocm, chai/2022.03.0
+
+  chapel: chapel/1.31.0
+
+  chapel-cuf23: chapel-cuf23/1.31.0
+
+  charliecloud: charliecloud/0.32
+
+  clacc: clacc/20230731-c79c0c7b560c, clacc/20230815-a709b98613de
+
+  clara: clara/1.1.5-qq4tm
+
+  cli11: cli11/1.9.1-y4xiv
+
+  cmake: cmake/3.21.2-dev, cmake/3.21.3, cmake/3.22.2, cmake/3.23.1, cmake/3.23.2, cmake/3.26.3-tg6ty
+
+  codee: codee/1.6.0, codee/2023.1
+
+  conduit: conduit/0.7.2, conduit/0.8.2, conduit/0.8.3, conduit/0.8.7-ds42t, conduit/0.8.7
+
+  cpe: cpe/22.06, cpe/22.12, cpe/23.03, cpe/23.05, cpe/23.09, cpe/23.12
+
+  cpe-cuda: cpe-cuda/22.06, cpe-cuda/22.12, cpe-cuda/23.03, cpe-cuda/23.05, cpe-cuda/23.09, cpe-cuda/23.12
+
+  cray-R: cray-R/4.1.3.1, cray-R/4.2.1.1, cray-R/4.2.1.2, cray-R/4.3.1
+
+  cray-ccdb: cray-ccdb/4.12.11, cray-ccdb/4.12.13, cray-ccdb/5.0.0, cray-ccdb/5.0.1, cray-ccdb/5.0.2
+
+  cray-cti: cray-cti/2.15.11, cray-cti/2.15.12, cray-cti/2.15.14, cray-cti/2.16.0, cray-cti/2.17.1, ...
+
+  cray-dsmml: cray-dsmml/0.2.2
+
+  cray-dyninst: cray-dyninst/12.1.0, cray-dyninst/12.1.1, cray-dyninst/12.2.0, cray-dyninst/12.3.0, ...
+
+  cray-fftw: cray-fftw/3.3.8.13, cray-fftw/3.3.10.1, cray-fftw/3.3.10.3, cray-fftw/3.3.10.4, cray-fftw/3.3.10.5, ...
+
+  cray-hdf5: cray-hdf5/1.12.1.5, cray-hdf5/1.12.2.1, cray-hdf5/1.12.2.3, cray-hdf5/1.12.2.7, cray-hdf5/1.12.2.9
+
+  cray-hdf5-parallel: cray-hdf5-parallel/1.12.1.5, cray-hdf5-parallel/1.12.2.1, cray-hdf5-parallel/1.12.2.3, ...
+
+  cray-libpals: cray-libpals/1.1.8, cray-libpals/1.2.5, cray-libpals/1.2.11, cray-libpals/1.2.12
+
+  cray-libsci: cray-libsci/21.08.1.2, cray-libsci/22.06.1.3, cray-libsci/22.12.1.1, cray-libsci/23.02.1.1, ...
+
+  cray-libsci_acc: cray-libsci_acc/22.06.1.2, cray-libsci_acc/22.12.1.1, cray-libsci_acc/23.05.1.1, ...
+
+  cray-mpich: cray-mpich/8.1.17, cray-mpich/8.1.23, cray-mpich/8.1.25, cray-mpich/8.1.26, cray-mpich/8.1.27, ...
+
+  cray-mpich-abi: cray-mpich-abi/8.1.17, cray-mpich-abi/8.1.23, cray-mpich-abi/8.1.25, cray-mpich-abi/8.1.26, ...
+
+  cray-mpich-ucx: cray-mpich-ucx/8.1.17, cray-mpich-ucx/8.1.23, cray-mpich-ucx/8.1.25
+
+  cray-mpich-ucx-abi: cray-mpich-ucx-abi/8.1.17, cray-mpich-ucx-abi/8.1.23, cray-mpich-ucx-abi/8.1.25
+
+  cray-mpixlate: cray-mpixlate/1.0.0.6, cray-mpixlate/1.0.1.10, cray-mpixlate/1.0.1.11, cray-mpixlate/1.0.2, ...
+
+  cray-mrnet: cray-mrnet/5.0.2, cray-mrnet/5.0.4, cray-mrnet/5.1.0, cray-mrnet/5.1.1, cray-mrnet/5.1.2
+
+  cray-netcdf: cray-netcdf/4.8.1.5, cray-netcdf/4.9.0.1, cray-netcdf/4.9.0.3, cray-netcdf/4.9.0.7, ...
+
+  cray-netcdf-hdf5parallel: cray-netcdf-hdf5parallel/4.8.1.5, cray-netcdf-hdf5parallel/4.9.0.1, ...
+
+  cray-openshmemx: cray-openshmemx/11.5.5, cray-openshmemx/11.5.7, cray-openshmemx/11.5.8, cray-openshmemx/11.6.0, ...
+
+  cray-pals: cray-pals/1.1.8, cray-pals/1.2.5, cray-pals/1.2.11, cray-pals/1.2.12
+
+  cray-parallel-netcdf: cray-parallel-netcdf/1.12.2.5, cray-parallel-netcdf/1.12.3.1, ...
+
+  cray-pmi: cray-pmi/6.0.17, cray-pmi/6.1.3, cray-pmi/6.1.8, cray-pmi/6.1.10, cray-pmi/6.1.11, cray-pmi/6.1.12, ...
+
+  cray-pmi-lib: cray-pmi-lib/6.0.17
+
+  cray-python: cray-python/3.9.12.1, cray-python/3.9.13.1, cray-python/3.10.10, cray-python/3.11.5
+
+  cray-stat: cray-stat/4.11.10, cray-stat/4.11.13, cray-stat/4.12.0, cray-stat/4.12.1, cray-stat/4.12.2
+
+  cray-ucx: cray-ucx/1.14.0, cray-ucx/2.7.0-1
+
+  craype: craype/2.7.16, craype/2.7.19, craype/2.7.20, craype/2.7.21, craype/2.7.23, craype/2.7.30
+
+  craype-accel-amd-gfx908: craype-accel-amd-gfx908
+
+  craype-accel-amd-gfx90a: craype-accel-amd-gfx90a
+
+  craype-accel-host: craype-accel-host
+
+  craype-accel-nvidia70: craype-accel-nvidia70
+
+  craype-accel-nvidia80: craype-accel-nvidia80
+
+  craype-arm-grace: craype-arm-grace
+
+  craype-dl-plugin-ftr: craype-dl-plugin-ftr/22.06.1.2
+
+  craype-dl-plugin-py3: craype-dl-plugin-py3/21.02.1.3, craype-dl-plugin-py3/21.04.1, ...
+
+  craype-hugepages128M: craype-hugepages128M
+
+  craype-hugepages16M: craype-hugepages16M
+
+  craype-hugepages1G: craype-hugepages1G
+
+  craype-hugepages256M: craype-hugepages256M
+
+  craype-hugepages2G: craype-hugepages2G
+
+  craype-hugepages2M: craype-hugepages2M
+
+  craype-hugepages32M: craype-hugepages32M
+
+  craype-hugepages4M: craype-hugepages4M
+
+  craype-hugepages512M: craype-hugepages512M
+
+  craype-hugepages64M: craype-hugepages64M
+
+  craype-hugepages8M: craype-hugepages8M
+
+  craype-network-none: craype-network-none
+
+  craype-network-ofi: craype-network-ofi
+
+  craype-network-ucx: craype-network-ucx
+
+  craype-x86-genoa: craype-x86-genoa
+
+  craype-x86-milan: craype-x86-milan
+
+  craype-x86-milan-x: craype-x86-milan-x
+
+  craype-x86-rome: craype-x86-rome
+
+  craype-x86-spr: craype-x86-spr
+
+  craype-x86-spr-hbm: craype-x86-spr-hbm
+
+  craype-x86-trento: craype-x86-trento
+
+  craypkg-gen: craypkg-gen/1.3.25, craypkg-gen/1.3.28, craypkg-gen/1.3.30, craypkg-gen/1.3.31
+
+  cubegui: cubegui/4.8.1
+
+  cubelib: cubelib/4.8.1, cubelib/4.8.2
+
+  cubew: cubew/4.8.1, cubew/4.8.2
+
+  curl: curl/7.79.0, curl/7.81.0, curl/8.0.1-i3ovb, curl/8.0.1-5f6u7
+
+  czmq: czmq/4.1.1-73msg
+
+  darshan-runtime: darshan-runtime/3.4.0, darshan-runtime/3.4.2
+
+  darshan-util: darshan-util/3.3.1, darshan-util/3.4.0, darshan-util/3.4.2
+
+  datatransferkit: datatransferkit/3.1-rc3-gpu, datatransferkit/3.1-rc3
+
+  dbus: dbus/1.12.8
+
+  diffutils: diffutils/3.8, diffutils/3.9-yb3vc
+
+  dihydrogen: dihydrogen/develop-tnbvh
+
+  docbook-xml: docbook-xml/4.3, docbook-xml/4.5-kbhyc
+
+  docbook-xsl: docbook-xsl/1.78.1, docbook-xsl/1.79.2-dhyxe
+
+  double-conversion: double-conversion/3.2.1-4ppwh
+
+  dtcmp: dtcmp/1.1.4-nt3cv
+
+  dyninst: dyninst/12.3.0-v43qx, dyninst/12.3.0
+
+  ecp-data-vis-sdk: ecp-data-vis-sdk/1.0-rocm, ecp-data-vis-sdk/1.0
+
+  ed: ed/1.4
+
+  eigen: eigen/3.4.0-gwfae
+
+  elfutils: elfutils/0.189-hkhy4, elfutils/0.189-3xuny
+
+  emacs: emacs/27.2, emacs/28.1
+
+  embree: embree/3.13.1-3qh2a
+
+  er: er/0.4.0-s3jd2
+
+  exaworks: exaworks/0.1.0
+
+  exmcutils: exmcutils/0.6.0-uvwnq
+
+  expat: expat/2.4.1, expat/2.4.6, expat/2.5.0-uo4mk
+
+  exuberant-ctags: exuberant-ctags/5.8
+
+  faodel: faodel/1.2108.1
+
+  fftw: fftw/3.3.10-4hlia, fftw/3.3.10-256fv
+
+  fides: fides/1.2.0-q3sb2
+
+  findutils: findutils/4.8.0, findutils/4.9.0-tqk3q
+
+  fixesproto: fixesproto/5.0
+
+  flecsi: flecsi/1.4.2, flecsi/2.2.0
+
+  flex: flex/2.6.3-oko7r, flex/2.6.3, flex/2.6.4-phcye
+
+  flit: flit/2.1.0
+
+  flux: flux/0.56.0
+
+  flux-core: flux-core/0.49.0-a7p3r, flux-core/0.49.0
+
+  flux-sched: flux-sched/0.27.0-zjmqh
+
+  font-util: font-util/1.3.2
+
+  fontconfig: fontconfig/2.13.93, fontconfig/2.13.94
+
+  fontsproto: fontsproto/2.1.3
+
+  forge: forge/22.1.0rc, forge/22.1.0, forge/22.1.1, forge/23.1
+
+  fortrilinos: fortrilinos/2.2.0
+
+  fpchecker: fpchecker/0.3.5
+
+  fpzip: fpzip/1.3.0-dylew
+
+  freetype: freetype/2.11.0, freetype/2.11.1-tdfsh, freetype/2.11.1
+
+  fribidi: fribidi/1.0.5
+
+  gasnet: gasnet/2021.9.0-cpu, gasnet/2022.3.0-cpu, gasnet/2022.3.0, gasnet/2023.3.0-rocm, gasnet/2023.3.0
+
+  gawk: gawk/5.1.0, gawk/5.1.1, gawk/5.2.1-se6za
+
+  gcc: gcc/10.3.0, gcc/11.2.0, gcc/12.2.0
+
+  gcc-mixed: gcc-mixed/11.2.0, gcc-mixed/12.2.0
+
+  gdb: gdb/10.2
+
+  gdb4hpc: gdb4hpc/4.14.1, gdb4hpc/4.14.6, gdb4hpc/4.14.7, gdb4hpc/4.15.0, gdb4hpc/4.15.1, gdb4hpc/4.16.0
+
+  gdbm: gdbm/1.19, gdbm/1.23-6w2yo
+
+  gdk-pixbuf: gdk-pixbuf/2.42.6
+
+  gettext: gettext/0.21.1-h346u
+
+  ghostscript: ghostscript/9.54.0
+
+  ghostscript-fonts: ghostscript-fonts/8.11
+
+  giflib: giflib/5.2.1
+
+  ginkgo: ginkgo/1.4.0-cpu, ginkgo/1.4.0, ginkgo/1.5.0-rocm, ginkgo/1.5.0
+
+  git: git/2.31.1, git/2.35.1, git/2.36.1, git/2.40.0-jm2g7, git/2.40.0-kxtfl
+
+  git-lfs: git-lfs/2.11.0
+
+  glew: glew/2.2.0-ntqcd
+
+  globalarrays: globalarrays/5.8.2
+
+  glproto: glproto/1.4.17-lul27
+
+  gmake: gmake/4.3, gmake/4.4.1-6b72i
+
+  gmp: gmp/6.2.1
+
+  gnupg: gnupg/2.3.1, gnupg/2.3.4
+
+  gnuplot: gnuplot/5.2.8, gnuplot/5.4.2, gnuplot/5.4.3
+
+  go: go/1.17.1, go/1.17.3, go/1.18
+
+  gobject-introspection: gobject-introspection/1.56.1
+
+  googletest: googletest/1.10.0
+
+  gotcha: gotcha/1.0.3, gotcha/1.0.4
+
+  gperf: gperf/3.1
+
+  gperftools: gperftools/2.10-4tag5
+
+  gsl: gsl/2.7.1-usion, gsl/2.7.1
+
+  gtkplus: gtkplus/3.24.29
+
+  h5bench: h5bench/1.3
+
+  harfbuzz: harfbuzz/2.9.1
+
+  hdf5: hdf5/1.8.21-wr357, hdf5/1.12.1, hdf5/1.14.0, hdf5/1.14.1-2-s2l7z
+
+  hdf5-vol-async: hdf5-vol-async/1.5
+
+  hdf5-vol-cache: hdf5-vol-cache/v1.1
+
+  hdf5-vol-log: hdf5-vol-log/1.4.0
+
+  heffte: heffte/2.2.0-cpu-fftw, heffte/2.2.0-cpu, heffte/2.2.0, heffte/2.3.0-rocm, heffte/2.3.0
+
+  help2man: help2man/1.49.3-34pyr
+
+  hip: hip/5.3.0-rocm-pwsxi, hip/5.3.0-rocm-74qpf
+
+  hipblas: hipblas/5.3.0-rocm-icreq
+
+  hipsolver: hipsolver/5.3.0-rocm-g3gzd
+
+  hipsparse: hipsparse/5.3.0-rocm-7h6xr
+
+  hiredis: hiredis/0.14.1
+
+  hpctoolkit: hpctoolkit/develop-20240226, hpctoolkit/2023.03.01-rocm, hpctoolkit/2023.03.01, hpctoolkit/2023.08, ...
+
+  hpcviewer: hpcviewer/2023.04-sb6ea, hpcviewer/2023.07, hpcviewer/2024.02
+
+  hpx: hpx/1.7.1-cpu, hpx/1.7.1, hpx/1.9.0
+
+  hsa-rocr-dev: hsa-rocr-dev/5.3.0-ssqru, hsa-rocr-dev/5.3.0-7jgrt
+
+  hsi: hsi/default
+    
+
+  htop: htop/3.0.2
+
+  hwloc: hwloc/2.5.0, hwloc/2.9.1-zwxo7
+
+  hydrogen: hydrogen/develop-zyryq
+
+  hypre: hypre/2.28.0-rocm, hypre/2.28.0
+
+  icu4c: icu4c/67.1
+
+  imagemagick: imagemagick/7.0.8-7
+
+  inputproto: inputproto/2.3.2-nx37y
+
+  intel-tbb: intel-tbb/2020.3-2jog3, intel-tbb/2021.9.0-7zjkb
+
+  intel-xed: intel-xed/2022.10.11-hqyij
+
+  intltool: intltool/0.51.0
+
+  iobuf: iobuf/2.0.10
+
+  ispc: ispc/1.19.0-mqtmd
+
+  jansson: jansson/2.14-6iyj3
+
+  json-c: json-c/master, json-c/ompix-a1, json-c/0.16-tqxso
+
+  jsoncpp: jsoncpp/1.9.5-6umk7
+
+  julia: julia/1.6.2
+
+  kbproto: kbproto/1.0.7-2cjzo
+
+  kokkos: kokkos/3.4.01, kokkos/3.5.00, kokkos/3.6.00, kokkos/3.7.00-txbch, kokkos/3.7.01-rocm-wbrh6, ...
+
+  kokkos-kernels: kokkos-kernels/3.4.01-omp, kokkos-kernels/3.5.00-omp, kokkos-kernels/3.6.00-omp, ...
+
+  krb5: krb5/1.19.2, krb5/1.20.1-h3l6q
+
+  kvtree: kvtree/1.4.0-bgza4
+
+  lammps: lammps/20220623.3
+
+  lapackpp: lapackpp/2022.07.00-kuap4, lapackpp/2022.07.00-rocm-ceyx7
+
+  lbann: lbann/0.102
+
+  lcms: lcms/2.9
+
+  legion: legion/21.03.0, legion/23.03.0
+
+  lfs-wrapper: lfs-wrapper/0.0.1
+
+  libaec: libaec/1.0.6-weov3
+
+  libarchive: libarchive/3.6.2-o5oaq, libarchive/3.6.2-7em2j
+
+  libbsd: libbsd/0.11.3, libbsd/0.11.5, libbsd/0.11.7-svce2
+
+  libcap: libcap/2.68-nbeph
+
+  libcatalyst: libcatalyst/2.0.0-rc3
+
+  libcerf: libcerf/1.3
+
+  libcircle: libcircle/0.3.0-ftxqm
+
+  libcroco: libcroco/0.6.13
+
+  libdistributed: libdistributed/0.4.2-7uo45
+
+  libdrm: libdrm/2.4.110
+
+  libdwarf: libdwarf/20180129-ahyvi
+
+  libedit: libedit/3.1-20210216-gnrem, libedit/3.1-20210216
+
+  libepoxy: libepoxy/1.4.3
+
+  libevent: libevent/2.1.12-takfw, libevent/2.1.12
+
+  libfabric: libfabric/ornl-perpeer-ompix-v3.debug, libfabric/ornl-perpeer-ompix-v3, ...
+
+  libffi: libffi/3.3, libffi/3.4.2, libffi/3.4.4-4zpef
+
+  libgcrypt: libgcrypt/1.10.2-22v5l
+
+  libgit2: libgit2/1.1.0, libgit2/1.1.1, libgit2/1.6.4-jeznl
+
+  libgpg-error: libgpg-error/1.47-sxtg4
+
+  libiberty: libiberty/2.40-wds7s
+
+  libice: libice/1.0.9-k3kr4, libice/1.0.9
+
+  libiconv: libiconv/1.17-hr2sq
+
+  libidn2: libidn2/2.3.4-wz5xt
+
+  libjpeg-turbo: libjpeg-turbo/2.1.0, libjpeg-turbo/2.1.5-yc6xm
+
+  libmd: libmd/1.0.3, libmd/1.0.4-bcya2, libmd/1.0.4
+
+  libmonitor: libmonitor/2023.03.15-phifp
+
+  libnrm: libnrm/0.1.0
+
+  libogg: libogg/1.3.5-p446d
+
+  libpciaccess: libpciaccess/0.17-gzi4o
+
+  libpng: libpng/1.2.57, libpng/1.6.37, libpng/1.6.39-yfa6s
+
+  libpressio: libpressio/0.95.1
+
+  libpthread-stubs: libpthread-stubs/0.4-rcpcj
+
+  libquo: libquo/1.3.1
+
+  librsvg: librsvg/2.51.0
+
+  libsigsegv: libsigsegv/2.14-jok24
+
+  libsm: libsm/1.2.3-eirb2, libsm/1.2.3
+
+  libsodium: libsodium/1.0.18-iwgnz
+
+  libssh2: libssh2/1.8.0, libssh2/1.10.0-xpxy7, libssh2/1.10.0
+
+  libstdcompat: libstdcompat/0.0.17-vhrfw
+
+  libtheora: libtheora/1.1.1-7qstd
+
+  libtiff: libtiff/4.1.0, libtiff/4.3.0, libtiff/4.5.0-i7blh
+
+  libtool: libtool/2.4.6, libtool/2.4.7-ndyvc
+
+  libtree: libtree/3.1.1
+
+  libunistring: libunistring/1.1-uytwz
+
+  libunwind: libunwind/1.5.0, libunwind/1.6.2
+
+  libx11: libx11/1.8.4-yrdxz
+
+  libxau: libxau/1.0.8-54bxr
+
+  libxcb: libxcb/1.14-lu3xc
+
+  libxcrypt: libxcrypt/4.4.33-eaaad
+
+  libxdmcp: libxdmcp/1.1.4-ehotj
+
+  libxext: libxext/1.3.3-htxsy
+
+  libxfixes: libxfixes/5.0.2
+
+  libxft: libxft/2.3.2
+
+  libxi: libxi/1.7.6
+
+  libxkbcommon: libxkbcommon/0.8.2
+
+  libxkbfile: libxkbfile/1.0.9
+
+  libxml2: libxml2/2.9.12, libxml2/2.10.3-4tck4
+
+  libxrandr: libxrandr/1.5.0, libxrandr/1.5.3-cyam4
+
+  libxrender: libxrender/0.9.10, libxrender/0.9.10-zwunb
+
+  libxslt: libxslt/1.1.33-dhpk4
+
+  libxt: libxt/1.1.5, libxt/1.1.5-4ahwm
+
+  libxtst: libxtst/1.2.2
+
+  libyaml: libyaml/0.2.5-czjqn
+
+  libzmq: libzmq/4.3.3, libzmq/4.3.4-j7aje, libzmq/4.3.4
+
+  llvm: llvm/8.0.0-7flay, llvm/12.0.1, llvm/15.0.7-vddzz, llvm/16.0.2, llvm/17.0.0-dev, llvm/17.0.0-20230419, ...
+
+  llvm-amdgpu: llvm-amdgpu/5.3.0-uikn4, llvm-amdgpu/5.3.0-xikyk
+
+  llvm-openmp-ompt: llvm-openmp-ompt/tr6_forwards-eeqma
+
+  lmod: lmod
+    Lmod: An Environment Module System
+
+  loki: loki/0.1.7
+
+  lua: lua/5.3.6-nbujw, lua/5.3.6-xavrz, lua/5.4.4-qri2f
+
+  lua-luaposix: lua-luaposix/36.1-dno5q, lua-luaposix/36.1-wvdzr
+
+  lua-sol2: lua-sol2/3.2.3-znwg3
+
+  lwgrp: lwgrp/1.0.5-wjcvo
+
+  lz4: lz4/1.9.3, lz4/1.9.4-yf7j3
+
+  lzo: lzo/2.10-7a4ts
+
+  m4: m4/1.4.19-n325x
+
+  magma: magma/2.6.1, magma/2.6.2, magma/2.7.1-rocm
+
+  mbedtls: mbedtls/2.28.2-ibv4y
+
+  memkind: memkind/1.13.0-n2a5w
+
+  mercurial: mercurial/5.8
+
+  mercury: mercury/2.0.1, mercury/2.1.0-ibffb, mercury/2.1.0, mercury/2.2.0
+
+  mesa: mesa/21.2.1, mesa/21.3.1, mesa/22.1.6-n5uvv
+
+  meson: meson/1.1.0-djkug, meson/1.1.0-mlxcl
+
+  metall: metall/0.17, metall/0.20, metall/0.25
+
+  metis: metis/5.1.0-dhsok
+
+  mfem: mfem/4.3.0, mfem/4.5.2-rocm, mfem/4.5.2
+
+  mgard: mgard/2023-03-31
+
+  miniforge3: miniforge3/23.11.0
+
+  mochi-margo: mochi-margo/0.9.6-2woig
+
+  mpark-variant: mpark-variant/1.4.0
+
+  mpfr: mpfr/4.2.0-drnky
+
+  mpifileutils: mpifileutils/0.11, mpifileutils/0.11.1
+
+  nano: nano/4.9, nano/6.3
+
+  nasm: nasm/2.15.05-2omv7
+
+  nccmp: nccmp/1.9.0.1
+
+  nco: nco/5.0.1, nco/5.1.5
+
+  ncurses: ncurses/6.3-5h34h
+
+  netcdf-c: netcdf-c/4.9.2-eltzg, netcdf-c/4.9.2-koxvd, netcdf-c/4.9.2-yu2xv
+
+  netlib-scalapack: netlib-scalapack/2.1.0, netlib-scalapack/2.2.0
+
+  nghttp2: nghttp2/1.52.0-dllr6
+
+  ninja: ninja/1.10.2, ninja/1.11.1-urmxw, ninja/1.11.1-3h6ez
+
+  nlohmann-json: nlohmann-json/3.11.2-gxq2o
+
+  nlopt: nlopt/2.7.0-j7kbs
+
+  nrm: nrm/0.1.0
+
+  numactl: numactl/2.0.14-2vyo5
+
+  omega-h: omega-h/9.34.13
+
+  omniperf: omniperf/1.0.10, omniperf/1.1.0-PR1
+    tool for GPU performance profiling
+
+  omnitrace: omnitrace/1.10.2, omnitrace/1.10.4, omnitrace/1.11.0
+    tool for GPU tracing
+
+  opari2: opari2/2.0.7, opari2/2.0.8
+
+  openblas: openblas/0.3.17-omp, openblas/0.3.17-pthreads, openblas/0.3.17, openblas/0.3.23-sqcpi
+
+  opencoarrays: opencoarrays/2.10.1
+
+  openfoam: openfoam/2206
+
+  openimagedenoise: openimagedenoise/1.4.3-bc27x
+
+  openjdk: openjdk/11.0.12_7, openjdk/11.0.17_8-pnevz
+
+  openmpi: openmpi/v5.0.0rc12+11775-ompix-a1.debug, openmpi/v5.0.0rc12+11775-ompix-a1, ...
+
+  openpmd-api: openpmd-api/0.14.3, openpmd-api/0.14.4, openpmd-api/0.15.1-jigtw, openpmd-api/0.15.1, ...
+
+  openssh: openssh/9.3p1-dg772
+
+  openssl: openssl/1.1.1-os-hr2fm
+
+  openvkl: openvkl/1.3.1-52z4t
+
+  osmesa: osmesa/11.2.0-5eorf
+
+  ospray: ospray/2.10.0-eejtd
+
+  otf2: otf2/2.3-jyueq, otf2/3.0.3
+
+  pango: pango/1.42.0-X, pango/1.42.0
+
+  papi: papi/6.0.0.1, papi/6.0.0.15, papi/6.0.0.17, papi/7.0.0.1, papi/7.0.0.2, papi/7.0.1.0_rocm5.3, papi/7.0.1.1, ...
+
+  papyrus: papyrus/1.0.1, papyrus/1.0.2
+
+  parallel: parallel/20220522
+
+  parallel-netcdf: parallel-netcdf/1.12.2, parallel-netcdf/1.12.3
+
+  paraview: paraview/5.11.1-rocm, paraview/5.11.1
+
+  parmetis: parmetis/4.0.3, parmetis/4.0.3-3nu45
+
+  parsec: parsec/3.0.2209
+
+  patchelf: patchelf/0.15.0
+
+  pcre: pcre/8.44, pcre/8.45-tq2xh, pcre/8.45
+
+  pcre2: pcre2/10.36, pcre2/10.39, pcre2/10.42-zp3zp
+
+  pdt: pdt/3.25.1
+
+  pegtl: pegtl/3.2.0-h7huk
+
+  perftools: perftools
+
+  perftools-base: perftools-base/22.06.0, perftools-base/22.12.0, perftools-base/23.03.0, perftools-base/23.05.0, ...
+
+  perftools-lite: perftools-lite
+
+  perftools-lite-events: perftools-lite-events
+
+  perftools-lite-gpu: perftools-lite-gpu
+
+  perftools-lite-hbm: perftools-lite-hbm
+
+  perftools-lite-loops: perftools-lite-loops
+
+  perftools-preload: perftools-preload
+
+  perl: perl/5.34.0, perl/5.36.0-jjsiz
+
+  perl-data-dumper: perl-data-dumper/2.173-ocw63, perl-data-dumper/2.173
+
+  perl-encode-locale: perl-encode-locale/1.05
+
+  perl-extutils-config: perl-extutils-config/0.008
+
+  perl-extutils-helpers: perl-extutils-helpers/0.026
+
+  perl-extutils-installpaths: perl-extutils-installpaths/0.012
+
+  perl-file-listing: perl-file-listing/6.04
+
+  perl-html-parser: perl-html-parser/3.72
+
+  perl-html-tagset: perl-html-tagset/3.20
+
+  perl-http-cookies: perl-http-cookies/6.04
+
+  perl-http-daemon: perl-http-daemon/6.01
+
+  perl-http-date: perl-http-date/6.02
+
+  perl-http-message: perl-http-message/6.13
+
+  perl-http-negotiate: perl-http-negotiate/6.01
+
+  perl-io-html: perl-io-html/1.001
+
+  perl-libwww-perl: perl-libwww-perl/6.33
+
+  perl-lwp-mediatypes: perl-lwp-mediatypes/6.02
+
+  perl-module-build: perl-module-build/0.4224
+
+  perl-module-build-tiny: perl-module-build-tiny/0.039
+
+  perl-net-http: perl-net-http/6.17
+
+  perl-test-needs: perl-test-needs/0.002005
+
+  perl-try-tiny: perl-try-tiny/0.28
+
+  perl-uri: perl-uri/1.72
+
+  perl-www-robotrules: perl-www-robotrules/6.02
+
+  perl-xml-parser: perl-xml-parser/2.44
+
+  petsc: petsc/3.16.4-cpu, petsc/3.19.1-rocm, petsc/3.19.1
+
+  pflotran: pflotran/4.0.1-ag7il
+
+  phist: phist/1.11.2
+
+  pigz: pigz/2.7-eqmk7
+
+  pinentry: pinentry/1.2.0
+
+  pixman: pixman/0.40.0
+
+  pkgconf: pkgconf/1.9.5-zcv3j
+
+  plasma: plasma/22.9.29
+
+  plumed: plumed/2.6.3, plumed/2.8.2
+
+  pmix: pmix/4.2.3-4av2f
+
+  precice: precice/2.3.0-cpu, precice/2.3.0, precice/2.4.0-cpu, precice/2.5.0
+
+  proj: proj/8.1.0-f5kpg
+
+  protobuf: protobuf/3.21.12-64i7g
+
+  pugixml: pugixml/1.13-yrdd3
+
+  pumi: pumi/2.2.7
+
+  py-alembic: py-alembic/1.5.5-zirbg
+
+  py-anyio: py-anyio/3.6.1-llang
+
+  py-apache-libcloud: py-apache-libcloud/1.2.1-rt4jk
+
+  py-argon2-cffi: py-argon2-cffi/21.3.0-h3fc4, py-argon2-cffi/21.3.0-lcsqz
+
+  py-argon2-cffi-bindings: py-argon2-cffi-bindings/21.2.0-erxh3, py-argon2-cffi-bindings/21.2.0-uozc3
+
+  py-asttokens: py-asttokens/2.0.8-sn46m, py-asttokens/2.0.8-t4zqh
+
+  py-async-generator: py-async-generator/1.10-yv2c4
+
+  py-attrs: py-attrs/22.2.0-ogzso, py-attrs/22.2.0-rrspq
+
+  py-babel: py-babel/2.10.3-3legm
+
+  py-backcall: py-backcall/0.2.0-zrtsh
+
+  py-bcrypt: py-bcrypt/3.2.0-ucw47
+
+  py-beautifulsoup4: py-beautifulsoup4/4.11.1-wj4op, py-beautifulsoup4/4.11.1-3bg65
+
+  py-beniget: py-beniget/0.4.1-apu2s, py-beniget/0.4.1-ek2i5
+
+  py-bleach: py-bleach/5.0.1-fqjfu, py-bleach/5.0.1-kkiux
+
+  py-bottleneck: py-bottleneck/1.3.5-obzfp
+
+  py-build: py-build/0.10.0-m3nbv, py-build/0.10.0-tae3z
+
+  py-calver: py-calver/2022.6.26-nazeh, py-calver/2022.6.26-5i4mf
+
+  py-certifi: py-certifi/2022.12.7-i7syh, py-certifi/2022.12.7-rvop7
+
+  py-certipy: py-certipy/0.1.3-x3y36
+
+  py-cffi: py-cffi/1.15.1-c5qvt, py-cffi/1.15.1-sol6f, py-cffi/1.15.1-zuzaz
+
+  py-cfgv: py-cfgv/3.3.1-2siou
+
+  py-charset-normalizer: py-charset-normalizer/2.0.12-ecbe4, py-charset-normalizer/2.0.12-p47aw
+
+  py-cinemasci: py-cinemasci/1.3
+
+  py-colorama: py-colorama/0.4.5-k5wje
+
+  py-comm: py-comm/0.1.3-vfn4z, py-comm/0.1.3-4whuq
+
+  py-contourpy: py-contourpy/1.0.5-zpxmn
+
+  py-cppy: py-cppy/1.2.1-sl3kl
+
+  py-cryptography: py-cryptography/38.0.1-zzc2c
+
+  py-cycler: py-cycler/0.11.0-nlb67
+
+  py-cython: py-cython/0.29.33-4k5dm, py-cython/0.29.33-5nsag, py-cython/0.29.33-6rclg, py-cython/3.0.0a9-bvuhr
+
+  py-debugpy: py-debugpy/1.6.6-qd3ms, py-debugpy/1.6.6-5qouy
+
+  py-decorator: py-decorator/5.1.1-chs27, py-decorator/5.1.1-lcecd
+
+  py-defusedxml: py-defusedxml/0.7.1-ocpin, py-defusedxml/0.7.1-4i47g
+
+  py-deprecation: py-deprecation/2.1.0-p36nv, py-deprecation/2.1.0-zr6dv
+
+  py-dill: py-dill/0.3.6-au5em
+
+  py-distlib: py-distlib/0.3.6-vecrb
+
+  py-editables: py-editables/0.3-rv7rb, py-editables/0.3-y6b4i
+
+  py-entrypoints: py-entrypoints/0.4-7q5gk
+
+  py-executing: py-executing/1.1.0-q7bi3, py-executing/1.1.0-y3v4l
+
+  py-fastjsonschema: py-fastjsonschema/2.16.3-psrot, py-fastjsonschema/2.16.3-xcmfz
+
+  py-filelock: py-filelock/3.12.0-hmnd5, py-filelock/3.12.0-qgp5s
+
+  py-flit-core: py-flit-core/3.7.1-o7r2r, py-flit-core/3.7.1-vmukk
+
+  py-fonttools: py-fonttools/4.37.3-6md3l
+
+  py-gast: py-gast/0.5.3-lljcr, py-gast/0.5.3-tfsst
+
+  py-gevent: py-gevent/1.5.0-cws4q, py-gevent/1.5.0-dqw2e, py-gevent/1.5.0-rgiws, py-gevent/21.12.0-sud6j
+
+  py-globus-sdk: py-globus-sdk/3.10.1-ekxvx
+
+  py-greenlet: py-greenlet/1.1.3-yeige, py-greenlet/2.0.2-honuu, py-greenlet/2.0.2-r5yjt, py-greenlet/2.0.2-u3hta
+
+  py-h5py: py-h5py/3.8.0-f7mvk, py-h5py/3.8.0
+
+  py-hatch-fancy-pypi-readme: py-hatch-fancy-pypi-readme/22.7.0-csoer, py-hatch-fancy-pypi-readme/22.7.0-237yk
+
+  py-hatch-nodejs-version: py-hatch-nodejs-version/0.3.1-ddxjo, py-hatch-nodejs-version/0.3.1-yhyxk
+
+  py-hatch-vcs: py-hatch-vcs/0.3.0-xn5xe, py-hatch-vcs/0.3.0-6oayu
+
+  py-hatchling: py-hatchling/1.14.0-2wy72, py-hatchling/1.14.0-7qmmk
+
+  py-identify: py-identify/2.5.5-t56ao
+
+  py-idna: py-idna/3.4-vplvn
+
+  py-ipykernel: py-ipykernel/6.22.0-nfp4l, py-ipykernel/6.22.0-yaf3k
+
+  py-ipython: py-ipython/8.11.0-krllo, py-ipython/8.11.0-6tze6
+
+  py-ipython-genutils: py-ipython-genutils/0.2.0-y5y5s, py-ipython-genutils/0.2.0-6u2fg
+
+  py-ipywidgets: py-ipywidgets/8.0.2-dgw3m
+
+  py-jedi: py-jedi/0.18.1-iizc7, py-jedi/0.18.1-34ulv
+
+  py-jinja2: py-jinja2/3.1.2-amz3u, py-jinja2/3.1.2-6nni6
+
+  py-json5: py-json5/0.9.10-2jcv5
+
+  py-jsonpatch: py-jsonpatch/1.23-7wr57
+
+  py-jsonpointer: py-jsonpointer/1.9-svng4
+
+  py-jsonschema: py-jsonschema/2.6.0-ya4f3, py-jsonschema/4.17.3-rzhfr, py-jsonschema/4.17.3-wikq5
+
+  py-jupyter-client: py-jupyter-client/8.1.0-ryaps, py-jupyter-client/8.1.0-yahwi
+
+  py-jupyter-core: py-jupyter-core/5.3.0-bo6g4, py-jupyter-core/5.3.0-n7hay
+
+  py-jupyter-packaging11: py-jupyter-packaging11/0.12.3-vroue, py-jupyter-packaging11/0.12.3-2h2ek
+
+  py-jupyter-server: py-jupyter-server/1.21.0-jce5m
+
+  py-jupyter-telemetry: py-jupyter-telemetry/0.1.0-orumg
+
+  py-jupyterhub: py-jupyterhub/1.4.1
+
+  py-jupyterlab: py-jupyterlab/3.4.8-dvs2r
+
+  py-jupyterlab-pygments: py-jupyterlab-pygments/0.2.2-jaoyh, py-jupyterlab-pygments/0.2.2-jazrq
+
+  py-jupyterlab-server: py-jupyterlab-server/2.10.3-2pi2q
+
+  py-jupyterlab-widgets: py-jupyterlab-widgets/3.0.3-wvyw7
+
+  py-kiwisolver: py-kiwisolver/1.4.4-dvj3z
+
+  py-libensemble: py-libensemble/0.9.3
+
+  py-lxml: py-lxml/4.9.1-h7v5h, py-lxml/4.9.1-wpjw2
+
+  py-mako: py-mako/1.2.2-fuyvn, py-mako/1.2.2-znyaq
+
+  py-markupsafe: py-markupsafe/2.1.1-jweqw, py-markupsafe/2.1.1-suoco
+
+  py-matplotlib: py-matplotlib/3.7.1-2haod
+
+  py-matplotlib-inline: py-matplotlib-inline/0.1.6-gzaem, py-matplotlib-inline/0.1.6-ngont
+
+  py-meson-python: py-meson-python/0.12.0-kmypc, py-meson-python/0.12.0-4km7o
+
+  py-mistune: py-mistune/2.0.4-inuxj, py-mistune/2.0.4-p4zo7
+
+  py-mpi4py: py-mpi4py/3.1.4-7jn3j
+
+  py-msgpack: py-msgpack/1.0.4-kvzlw
+
+  py-nbclassic: py-nbclassic/0.4.8-6xjy4
+
+  py-nbclient: py-nbclient/0.7.2-vu2py, py-nbclient/0.7.2-yha2i
+
+  py-nbconvert: py-nbconvert/7.0.0-d7cc6, py-nbconvert/7.0.0-nkwbe
+
+  py-nbformat: py-nbformat/5.8.0-b4efg, py-nbformat/5.8.0-ryi7e
+
+  py-nest-asyncio: py-nest-asyncio/1.5.6-upxpk, py-nest-asyncio/1.5.6-vuqw7
+
+  py-netifaces: py-netifaces/0.10.5-vxtal
+
+  py-nodeenv: py-nodeenv/1.7.0-kmw6r
+
+  py-notebook: py-notebook/6.4.12-ucu4h, py-notebook/6.4.12-xp37n
+
+  py-notebook-shim: py-notebook-shim/0.2.2-6uazk
+
+  py-ntplib: py-ntplib/0.4.0-xvz5c
+
+  py-numcodecs: py-numcodecs/0.7.3-k4d5k
+
+  py-numexpr: py-numexpr/2.8.3-lpg7e
+
+  py-numpy: py-numpy/1.24.3-flhhy, py-numpy/1.24.3-izoqj
+
+  py-oauthlib: py-oauthlib/3.2.1-4vuk6
+
+  py-packaging: py-packaging/23.0-rpzaq, py-packaging/23.0-yknei
+
+  py-pamela: py-pamela/1.0.0-xk6te
+
+  py-pandas: py-pandas/1.5.3-3h5r4
+
+  py-pandocfilters: py-pandocfilters/1.5.0-dnox2, py-pandocfilters/1.5.0-7xnqx
+
+  py-paramiko: py-paramiko/2.12.0-pnt5d
+
+  py-parse: py-parse/1.18.0-j2vre
+
+  py-parsl: py-parsl/1.2.0-x2b2y
+
+  py-parso: py-parso/0.8.3-lirkl, py-parso/0.8.3-6xykz
+
+  py-pathspec: py-pathspec/0.11.1-5qbrb
+
+  py-periodictable: py-periodictable/1.5.0-pfbih
+
+  py-petsc4py: py-petsc4py/3.19.1
+
+  py-pexpect: py-pexpect/4.8.0-oq6q4, py-pexpect/4.8.0-34cmb
+
+  py-pickleshare: py-pickleshare/0.7.5-cz5ly, py-pickleshare/0.7.5-sa7vg
+
+  py-picmistandard: py-picmistandard/0.0.22-cnrw3
+
+  py-pika: py-pika/0.13.0-4urqd
+
+  py-pillow: py-pillow/9.5.0-pff3o
+
+  py-pip: py-pip/21.3.1, py-pip/23.0-p5gxy, py-pip/23.0-znetm
+
+  py-pkgconfig: py-pkgconfig/1.5.5-akbdn
+
+  py-platformdirs: py-platformdirs/3.5.0-g57dg, py-platformdirs/3.5.0-42eqk
+
+  py-pluggy: py-pluggy/1.0.0-tkvs4, py-pluggy/1.0.0-2iah6
+
+  py-ply: py-ply/3.11-acri4, py-ply/3.11-c27so, py-ply/3.11-6si3n
+
+  py-poetry-core: py-poetry-core/1.2.0-qt55c
+
+  py-pre-commit: py-pre-commit/2.20.0-udbqi
+
+  py-prometheus-client: py-prometheus-client/0.14.1-c7ket, py-prometheus-client/0.14.1-q7i6v
+
+  py-prompt-toolkit: py-prompt-toolkit/3.0.31-d2l7u, py-prompt-toolkit/3.0.31-mo6j5
+
+  py-protobuf: py-protobuf/4.21.9-br727
+
+  py-psij-python: py-psij-python/0.1.0.post2-c6ufw
+
+  py-psutil: py-psutil/5.9.4-odwqf, py-psutil/5.9.4-qqjpl
+
+  py-ptyprocess: py-ptyprocess/0.7.0-c2beu
+
+  py-pure-eval: py-pure-eval/0.2.2-cv46f, py-pure-eval/0.2.2-j7vc7
+
+  py-py: py-py/1.11.0-idfju
+
+  py-pybind11: py-pybind11/2.10.1-fvpq3, py-pybind11/2.10.1-5qalu
+
+  py-pycparser: py-pycparser/2.21-skrpv, py-pycparser/2.21-3xlct, py-pycparser/2.21-6q4t2
+
+  py-pyelftools: py-pyelftools/0.29-qqfm3
+
+  py-pygments: py-pygments/2.13.0-g43rs, py-pygments/2.13.0-gdekj
+
+  py-pyjwt: py-pyjwt/2.4.0-wd3kq
+
+  py-pymongo: py-pymongo/3.12.1-xxpnc
+
+  py-pynacl: py-pynacl/1.5.0-dkwfw
+
+  py-pyopenssl: py-pyopenssl/22.1.0-fnn6r
+
+  py-pyparsing: py-pyparsing/3.0.9-eswe7
+
+  py-pyproject-hooks: py-pyproject-hooks/1.0.0-x6wqa, py-pyproject-hooks/1.0.0-36ja7
+
+  py-pyproject-metadata: py-pyproject-metadata/0.7.1-oseiu, py-pyproject-metadata/0.7.1-wb573
+
+  py-pyrsistent: py-pyrsistent/0.19.3-taiku, py-pyrsistent/0.19.3-3z7gb
+
+  py-pystache: py-pystache/0.6.0-jknjj
+
+  py-python-dateutil: py-python-dateutil/2.8.2-kj6ds, py-python-dateutil/2.8.2-n3ccy
+
+  py-python-editor: py-python-editor/1.0.4-xsw2y
+
+  py-python-json-logger: py-python-json-logger/0.1.11-gdye3
+
+  py-pythran: py-pythran/0.12.0-e7ipl, py-pythran/0.12.0-rv5hi
+
+  py-pytz: py-pytz/2022.2.1-3fszl
+
+  py-pyyaml: py-pyyaml/6.0-lbztu, py-pyyaml/6.0-rdy3p, py-pyyaml/6.0-zsx4q
+
+  py-pyzmq: py-pyzmq/17.1.2-rooyc, py-pyzmq/25.0.2-luunp, py-pyzmq/25.0.2-rm32f, py-pyzmq/25.0.2-77dcz
+
+  py-radical-entk: py-radical-entk/1.20.0-mdvwt
+
+  py-radical-gtod: py-radical-gtod/1.20.0-p3yww
+
+  py-radical-pilot: py-radical-pilot/1.20.0-htl4e
+
+  py-radical-saga: py-radical-saga/1.20.0-gai2h
+
+  py-radical-utils: py-radical-utils/1.20.0-24cmp
+
+  py-regex: py-regex/2022.8.17-art3c
+
+  py-requests: py-requests/2.28.2-hrrzx, py-requests/2.28.2-3shdx
+
+  py-ruamel-yaml: py-ruamel-yaml/0.17.16-rhyfx
+
+  py-scipy: py-scipy/1.10.1-uvvfy, py-scipy/1.10.1-xnmtr
+
+  py-semantic-version: py-semantic-version/2.10.0-zkgnt
+
+  py-send2trash: py-send2trash/1.8.0-otc4g, py-send2trash/1.8.0-6ujb5
+
+  py-setproctitle: py-setproctitle/1.1.10-nnm76
+
+  py-setuptools: py-setuptools/63.4.3-sooi4, py-setuptools/63.4.3-7azzb, py-setuptools/67.6.0-l6aby
+
+  py-setuptools-rust: py-setuptools-rust/1.5.1-ia67y
+
+  py-setuptools-scm: py-setuptools-scm/7.0.5-kipwe, py-setuptools-scm/7.0.5-r6mnq, py-setuptools-scm/7.0.5-36usy
+
+  py-six: py-six/1.16.0-iwlkt, py-six/1.16.0-ytlzb, py-six/1.16.0-5hav7
+
+  py-sniffio: py-sniffio/1.3.0-raxpr
+
+  py-soupsieve: py-soupsieve/2.3.2.post1-auvy3, py-soupsieve/2.3.2.post1-bj4zb
+
+  py-sqlalchemy: py-sqlalchemy/1.4.45-mawp3
+
+  py-stack-data: py-stack-data/0.5.0-auid7, py-stack-data/0.5.0-2t27w
+
+  py-tblib: py-tblib/1.6.0-pjbal
+
+  py-terminado: py-terminado/0.15.0-usbhp, py-terminado/0.15.0-yh2pk
+
+  py-tinycss2: py-tinycss2/1.1.1-alhdy, py-tinycss2/1.1.1-pz432
+
+  py-toml: py-toml/0.10.2-h3plx, py-toml/0.10.2-rodoh
+
+  py-tomli: py-tomli/2.0.1-fulzw, py-tomli/2.0.1-4r7nh
+
+  py-tomlkit: py-tomlkit/0.11.4-3a4b7
+
+  py-tornado: py-tornado/5.1.1-rearh, py-tornado/6.2-g7wbv, py-tornado/6.2-icjug
+
+  py-traitlets: py-traitlets/5.9.0-vtp4n, py-traitlets/5.9.0-5prsi
+
+  py-trove-classifiers: py-trove-classifiers/2023.3.9-gyt3f, py-trove-classifiers/2023.3.9-skwjr
+
+  py-typeguard: py-typeguard/3.0.2-4sasb
+
+  py-typing-extensions: py-typing-extensions/4.5.0-ajrwq, py-typing-extensions/4.5.0-jejrn
+
+  py-urllib3: py-urllib3/1.26.12-i5t33, py-urllib3/1.26.12-6jzrh
+
+  py-vcversioner: py-vcversioner/2.16.0.0-ci7rr
+
+  py-versioneer: py-versioneer/0.28-o47q3
+
+  py-virtualenv: py-virtualenv/20.22.0-um4sq
+
+  py-warlock: py-warlock/1.3.3-s42s6
+
+  py-warpx: py-warpx/23.03-dims2, py-warpx/23.03-dims3, py-warpx/23.03-dimsRZ
+
+  py-wcwidth: py-wcwidth/0.2.5-bojrm, py-wcwidth/0.2.5-dhnrf
+
+  py-webencodings: py-webencodings/0.5.1-aqwxc, py-webencodings/0.5.1-qj2gy
+
+  py-websocket-client: py-websocket-client/1.5.1-b5zvw
+
+  py-wheel: py-wheel/0.37.1-uyvti, py-wheel/0.37.1-3g333
+
+  py-widgetsnbextension: py-widgetsnbextension/4.0.3-u3wyu
+
+  py-zope-event: py-zope-event/4.6-tbhtz
+
+  py-zope-interface: py-zope-interface/5.4.0-ceg2a
+
+  python: python/3.8.16-cx4ue, python/3.10-miniforge3, python/3.10.10-alt24
+
+  qhull: qhull/2020.2-yh4lu
+
+  qthreads: qthreads/1.16
+
+  quantum-espresso: quantum-espresso/7.1
+
+  raja: raja/0.14.0-cpu-omp, raja/0.14.0, raja/2022.10.4-rocm, raja/2022.10.4
+
+  randrproto: randrproto/1.5.0-d37yh, randrproto/1.5.0
+
+  rankstr: rankstr/0.3.0-fgeda
+
+  re2c: re2c/2.2-54uqc
+
+  readline: readline/8.2-b4ut2
+
+  recordproto: recordproto/1.14.2
+
+  redset: redset/0.3.0-g7rqf
+
+  rempi: rempi/1.1.0
+
+  renderproto: renderproto/0.11.1-l5h7t, renderproto/0.11.1
+
+  rkcommon: rkcommon/1.10.0-ckn4q
+
+  rocblas: rocblas/5.3.0-gmxhf
+
+  rocfft: rocfft/5.3.0-6nwdq
+
+  rocm: rocm/4.5.2, rocm/5.1.0, rocm/5.2.0, rocm/5.3.0, rocm/5.4.0, rocm/5.4.3, rocm/5.5.1, rocm/5.6.0, rocm/5.7.0, ...
+
+  rocprim: rocprim/5.2.0-uiae4, rocprim/5.3.0-oiutl, rocprim/5.3.0-rh6sx
+
+  rocprofiler-dev: rocprofiler-dev/5.3.0-4qzam
+
+  rocrand: rocrand/5.3.0-3c5iz, rocrand/5.3.0-6mrku
+
+  rocsolver: rocsolver/5.3.0-n5t3w
+
+  rocsparse: rocsparse/5.3.0-hrjzn, rocsparse/5.3.0-keqhl
+
+  rocthrust: rocthrust/5.3.0-xuvnm, rocthrust/5.3.0-67uer
+
+  roctracer-dev: roctracer-dev/5.3.0-l66pp
+
+  rust: rust/1.51.0, rust/1.65.0-upwvi
+
+  sanitizers4hpc: sanitizers4hpc/1.0.0, sanitizers4hpc/1.0.4, sanitizers4hpc/1.1.0, sanitizers4hpc/1.1.1, ...
+
+  scons: scons/3.1.2
+
+  scorep-amd: scorep-amd/8.3
+
+  scorep-amdclang: scorep-amdclang/8.3_debug, scorep-amdclang/8.3
+
+  scorep-cray: scorep-cray/8.4.beta
+
+  scorep-gcc-amd: scorep-gcc-amd/8.3
+
+  scotch: scotch/7.0.3-gikdb
+
+  screen: screen/4.8.0
+
+  sed: sed/4.9-kbdss
+
+  serf: serf/1.3.9
+
+  settarg: settarg
+    The settarg module provides a way to connect the loaded modules with your build system by setting environment
+    variables. 
+
+  shared-mime-info: shared-mime-info/1.9
+
+  shuffile: shuffile/0.3.0-v5xf2
+
+  silo: silo/4.11-7fjem
+
+  slate: slate/2022.07.00-rocm, slate/2022.07.00
+
+  slepc: slepc/3.17.1-cpu, slepc/3.17.1, slepc/3.19.0-rocm, slepc/3.19.0
+
+  snappy: snappy/1.1.10-nr3wf
+
+  spath: spath/0.3.0-5do6q
+
+  spdlog: spdlog/1.11.0-blxb7
+
+  sqlite: sqlite/3.36.0, sqlite/3.37.2, sqlite/3.40.1-ry7pi
+
+  stc: stc/0.9.0
+
+  strumpack: strumpack/6.3.0, strumpack/6.3.1, strumpack/7.1.1-rocm, strumpack/7.1.1
+
+  subversion: subversion/1.14.0, subversion/1.14.1
+
+  suite-sparse: suite-sparse/5.13.0
+
+  sundials: sundials/5.8.0-cpu, sundials/5.8.0, sundials/6.1.1-cpu, sundials/6.1.1, sundials/6.2.0-cpu, ...
+
+  superlu: superlu/5.3.0
+
+  superlu-dist: superlu-dist/7.1.1-cpu, superlu-dist/7.1.1, superlu-dist/7.2.0-cpu, superlu-dist/7.2.0-mkjgc, ...
+
+  swig: swig/4.0.2-fortran, swig/4.0.2, swig/4.1.1-vlp3g
+
+  sz: sz/1.4.12.3-zczqf, sz/2.1.12, sz/2.1.12.5-fwveg, sz/2.1.12.5, sz/2.1.12.5-6xbtb
+
+  sz3: sz3/3.1.7-o6bil, sz3/3.1.7
+
+  tar: tar/1.34-uttw4, tar/1.34
+
+  tasmanian: tasmanian/7.7-cpu, tasmanian/7.7, tasmanian/7.9-rocm, tasmanian/7.9
+
+  tau: tau/2.32-rocm, tau/2.32, tau/2.32.1-clang-acc
+
+  tcl: tcl/8.6.12-lke2a
+
+  texinfo: texinfo/6.5, texinfo/7.0.3-qmf5k
+
+  texlive: texlive/20220321
+
+  tmux: tmux/3.2a
+
+  toml11: toml11/3.7.1-chsxh
+
+  trilinos: trilinos/13.0.1, trilinos/13.2.0-cpu, trilinos/13.4.1-rktpr, trilinos/14.0.0-rocm
+
+  turbine: turbine/1.3.0
+
+  udunits: udunits/2.2.28-yanon
+
+  umap: umap/2.1.0
+
+  umpire: umpire/6.0.0-cpu, umpire/6.0.0, umpire/2022.03.1-rocm, umpire/2022.03.1-sze3o, umpire/2022.03.1-xvmvy, ...
+
+  ums: ums/default
+
+  ums002: ums002/default, ums002/vanilla
+
+  ums012: ums012/default
+
+  ums014: ums014/default
+
+  ums022: ums022/default
+
+  ums023: ums023/default
+
+  ums024: ums024/default
+
+  ums025: ums025/default
+
+  ums029: ums029/default
+
+  ums031: ums031/default
+
+  ums032: ums032/default
+
+  ums036: ums036/default
+
+  unifyfs: unifyfs/1.0.1
+
+  unzip: unzip/6.0-llwbi
+
+  upcxx: upcxx/bleeding-edge, upcxx/nightly, upcxx/2021.9.0-cpu, upcxx/2022.3.0-cpu, upcxx/2022.3.0, ...
+
+  upcxx-hip: upcxx-hip/bleeding-edge, upcxx-hip/nightly, upcxx-hip/2023.3.0, upcxx-hip/2023.9.0
+
+  utf8proc: utf8proc/2.4.0, utf8proc/2.6.1
+
+  util-linux-uuid: util-linux-uuid/2.38.1-m4crm
+
+  util-macros: util-macros/1.19.3-rskzb
+
+  valgrind4hpc: valgrind4hpc/2.12.8, valgrind4hpc/2.12.10, valgrind4hpc/2.12.11, valgrind4hpc/2.13.0, ...
+
+  vampir: vampir/10.3.0
+
+  variorum: variorum/0.6.0
+
+  veloc: veloc/1.5, veloc/1.6
+
+  vim: vim/8.2.2541
+
+  vtk-m: vtk-m/1.9.0-rocm, vtk-m/1.9.0
+
+  wannier90: wannier90/3.1.0
+
+  warpx: warpx/23.03-r5rqd, warpx/23.03-wfrec, warpx/23.03-446dv
+
+  wget: wget/1.21.1, wget/1.21.2, wget/1.21.3
+
+  xcb-proto: xcb-proto/1.15.2-zzf3u
+
+  xerces-c: xerces-c/3.2.4-2vixh
+
+  xextproto: xextproto/7.3.0-6dxdx
+
+  xkbcomp: xkbcomp/1.4.4
+
+  xkbdata: xkbdata/1.0.1
+
+  xpmem: xpmem/2.6.2-2.5_2.22__gd067c3f.shasta
+
+  xproto: xproto/7.0.31-dk3uk, xproto/7.0.31
+
+  xrandr: xrandr/1.5.0-c35bg, xrandr/1.5.0
+
+  xtrans: xtrans/1.4.0-co6ms
+
+  xz: xz/5.4.1-yxqlx
+
+  yaml-cpp: yaml-cpp/0.6.3-qe34j, yaml-cpp/0.7.0-kzfri
+
+  zfp: zfp/0.5.5, zfp/1.0.0-44ole
+
+  zip: zip/3.0
+
+  zlib: zlib/1.2.11, zlib/1.2.13-d35p7
+
+  zsh: zsh/5.8-jzikl
+
+  zstd: zstd/1.5.0, zstd/1.5.2, zstd/1.5.5-g6f4s, zstd/1.5.5-yiosj
+
+  zstr: zstr/1.0.7-52cjw
+
+-------------------------------------------------------------------------------------------------------------------
+
+To learn more about a package execute:
+
+   $ module spider Foo
+
+where "Foo" is the name of a module.
+
+To find detailed information about a particular package you
+must specify the version if there is more than one version:
+
+   $ module spider Foo/11.1
+
+-------------------------------------------------------------------------------------------------------------------
+
+ 
+

@@ -1,8 +1,9 @@
 #ifndef __calculate_J_HPP__
 #define __calculate_J_HPP__
 
-#include "oneapi/mkl/blas.hpp"
-#include "mkl.h"
+//#include "oneapi/mkl/blas.hpp"
+//#include "mkl.h"
+#include "cblas.h"
 
 #include "index_functions.hpp"
 #include "error_checking.hpp"

@@ -1,9 +1,13 @@
 #ifndef __calcualte_B_hpp
 #define __calcualte_B_hpp
 
-#include "oneapi/mkl/blas.hpp"
-#include "mkl.h"
-#include "oneapi/mkl/lapack.hpp"
+//#include "oneapi/mkl/blas.hpp"
+//#include "mkl.h"
+//#include "oneapi/mkl/lapack.hpp"
+
+#include "cblas.h"
+#include "lapack.h"
+
 
 #include "index_functions.hpp"
 #include "read_hdf5_file.hpp"
@@ -12,6 +16,8 @@
 #include "constants.hpp"
 #include "run_metadata.hpp"
 #include "scf_data.hpp"
+
+
 
 //check J_AB_inv result
 // // bool check_J_AB_inv_result(double* two_center_integrals, int Q){
@@ -105,14 +111,14 @@ void calculate_B(run_metadata* metadata, scf_data* scfdata, std::vector<double>*
 
  
     // !!!!! CHOLESKY DECOMPOSION OF 2C-2E MATRIX V=L*LT
-    dpotrf("L", &Q,  scfdata->two_center_integrals->data(), &Q, &info);
+    dpotrf_("L", &Q,  scfdata->two_center_integrals->data(), &Q, &info);
     std::cout << "Done with cholesky decomp" << std::endl;
 
     std::cout << "info = " << info << std::endl;
 
 
     // !!!!! DETERMINATION OF INVERSE OF CHOLESKY DECOMPOSED MATRIX L^(-1)
-    dtrtri("L", "N", &Q, scfdata->two_center_integrals->data(), &Q, &info);
+    dtrtri_("L", "N", &Q, scfdata->two_center_integrals->data(), &Q, &info);
     std::cout << "Done with inverse of cholesky decomp" << std::endl;
 
     //print top 10x10 scfdata->two_center_integrals->data()

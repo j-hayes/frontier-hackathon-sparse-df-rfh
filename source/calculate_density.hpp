@@ -1,8 +1,10 @@
 #ifndef __CALCULATE_DENSITY_HPP__
 #define __CALCULATE_DENSITY_HPP__
 
-#include "oneapi/mkl/blas.hpp"
-#include "mkl.h"
+//#include "oneapi/mkl/blas.hpp"
+//#include "mkl.h"
+#include "cblas.h"
+
 #include "read_hdf5_file.hpp"
 #include <string>
 #include "index_functions.hpp"
@@ -60,8 +62,25 @@ void calculate_density(run_metadata* metadata, scf_data* scfdata,
     //     std::cout << std::endl;
     // }
 
-    cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasTrans, p, p, occ, 1.0, 
-    scfdata->occupied_orbital_coefficients->data(), occ, scfdata->occupied_orbital_coefficients->data(), occ, 0.0, density->data(), p);
+    int M = p;
+    int N = p;
+    int K = occ;
+    int lda = occ;
+    int ldb = occ;
+    int ldc = p;
+    double alpha = 1.0;
+    double beta = 0.0;
+
+    //cblas_dgemm A and B
+    cblas_dgemm(CblasRowMajor , CblasNoTrans, CblasTrans, M, N, K, 
+    alpha, scfdata->occupied_orbital_coefficients->data(), lda, 
+    scfdata->occupied_orbital_coefficients->data(), ldb, 
+    beta, density->data(), ldc);
+
+    // cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasTrans, p, p, occ, 
+    // 1.0,  scfdata->occupied_orbital_coefficients->data(), occ, 
+    // scfdata->occupied_orbital_coefficients->data(), occ, 
+    // 0.0, density->data(), p);
 
     //print the top 10x10 elements of density
     std::cout << "Density" << std::endl;
