@@ -5,7 +5,10 @@ project(DF_RHF-miniapp LANGUAGES CXX)
 
 #set project program name 
 set(app DF_RHF)
-set(BLAS_VENDOR OpenBLAS)
+find_package(OpenMP REQUIRED)
+if(OPENMP_FOUND)
+    message(STATUS "OpenMP found")
+endif()
 find_package(BLAS REQUIRED)
 
 
@@ -20,14 +23,14 @@ message(STATUS "LAPACK includes: ${LAPACK_INCLUDE_DIRS}")
 # find_package(HDF5 COMPONENTS CXX HL REQUIRED)
 
 
-find_package(MPI REQUIRED)
+# find_package(MPI REQUIRED)
 # limit C++ errors to one
 
 add_executable(DF_RHF source/df_fock_build.cpp)
-
-#inlcude blas and lapack 
+target_link_libraries(DF_RHF PUBLIC OpenMP::OpenMP_CXX)
+# #inlcude blas and lapack 
 target_include_directories(${app} PUBLIC ${BLAS_INCLUDE_DIRS} ${LAPACK_INCLUDE_DIRS})
-#link blas and lapack
+# #link blas and lapack
 target_link_libraries(${app} PUBLIC ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
 
 
@@ -35,3 +38,5 @@ target_link_libraries(${app} PUBLIC ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
 # target_link_libraries(${app} PUBLIC ${HDF5_LIBRARIES})
 
 #  cmake -CMAKE_CXX_COMPILER=CC cmake -DBLAS_LIBRARIES= ..
+
+# message(${CMAKE_CXX_FLAGS})

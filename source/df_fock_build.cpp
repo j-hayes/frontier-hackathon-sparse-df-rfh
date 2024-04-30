@@ -71,6 +71,7 @@ void get_lower_triangle_three_center_integrals(run_metadata* metadata, scf_data*
     }
     
     scfdata->three_center_integrals = new std::vector<double>(Q*triangle_length);
+    scfdata->three_center_integrals_T = new std::vector<double>(triangle_length*Q);
     for (int QQ = 0; QQ < Q; QQ++){
         for (int pp = 0; pp < p; pp++){
             for (int qq = 0; qq <= pp; qq++){
@@ -205,6 +206,8 @@ void build_fock_cpu(){
 
     get_lower_triangle_three_center_integrals(metadata, scfdata, three_center_integrals_data->data,
      sparse_pq_index_map->data, three_center_integrals_data->N);
+
+    
        
     calculate_B(metadata, scfdata, two_center_integrals_data->data); //B is a reference to the updated three_center_integrals_data->data
 

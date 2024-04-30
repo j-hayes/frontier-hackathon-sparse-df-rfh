@@ -20,7 +20,7 @@ int main() {
     B[3] = 0.0;
 
     hdf5_data_with_dims<double>* occupied_orbital_coefficients = 
-        read_file_data<double>("/ccs/home/jahyes1/source/frontier-hackathon-sparse-df-rfh/water_data/occupied_orbital_coefficients.h5");
+        read_file_data<double>("/global/u2/j/jhayes1/source/frontier-hackathon-sparse-df-rfh/water_data/occupied_orbital_coefficients.h5");
 
     std::cout << "occupied_orbital_coefficients[0]" << occupied_orbital_coefficients->data->data()[0] << std::endl;
 

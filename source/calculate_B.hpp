@@ -122,14 +122,14 @@ void calculate_B(run_metadata* metadata, scf_data* scfdata, std::vector<double>*
 
  
     // !!!!! CHOLESKY DECOMPOSION OF 2C-2E MATRIX V=L*LT
-    dpotrf_("L", &Q,  scfdata->two_center_integrals->data(), &Q, &info);
+    LAPACK_dpotrf("L", &Q,  scfdata->two_center_integrals->data(), &Q, &info);
     std::cout << "Done with cholesky decomp" << std::endl;
 
     std::cout << "info = " << info << std::endl;
 
 
     // !!!!! DETERMINATION OF INVERSE OF CHOLESKY DECOMPOSED MATRIX L^(-1)
-    dtrtri_("L", "N", &Q, scfdata->two_center_integrals->data(), &Q, &info);
+    LAPACK_dtrtri("L", "N", &Q, scfdata->two_center_integrals->data(), &Q, &info);
     std::cout << "Done with inverse of cholesky decomp" << std::endl;
 
     //print top 10x10 scfdata->two_center_integrals->data()
@@ -161,6 +161,13 @@ void calculate_B(run_metadata* metadata, scf_data* scfdata, std::vector<double>*
             std::cout << scfdata->three_center_integrals->data()[get_1d_index(i, j, triangle_length)] << " ";
         }
         std::cout << std::endl;
+    }
+
+    //set scfdata->three_center_integrals_T = transpose(three_center_integrals)
+    for (int i = 0; i < Q; i++){
+        for (int j = 0; j < triangle_length; j++){
+            scfdata->three_center_integrals_T->data()[get_1d_index(j, i, Q)] = scfdata->three_center_integrals->data()[get_1d_index(i, j, triangle_length)];
+        }
     }
 
 }

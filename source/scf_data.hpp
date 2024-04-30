@@ -11,6 +11,7 @@ struct scf_data {
     std::vector<double>* occupied_orbital_coefficients;
     std::vector<double>* two_center_integrals;
     std::vector<double>* three_center_integrals;
+    std::vector<double>* three_center_integrals_T;
     std::vector<double>* K;
     std::vector<double>* W;
     std::vector<double>* two_electron_fock;

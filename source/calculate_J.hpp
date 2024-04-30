@@ -77,9 +77,9 @@ void calculate_J(scf_data* scfdata, run_metadata* metadata){
  
     
     // set cblas_layout to CblasRowMajor
-    CBLAS_LAYOUT layout = CblasRowMajor;
+    auto layout = CblasRowMajor;
     //set transpose to no transpose
-    CBLAS_TRANSPOSE transp = CblasNoTrans;
+    auto transp = CblasNoTrans;
 
     //allocate V array
     // V[Q] = B(Q|pq)*density(p|q) coulomb intermediate

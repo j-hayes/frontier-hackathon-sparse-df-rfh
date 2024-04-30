@@ -15,7 +15,7 @@ void get_screening_data(run_metadata* metadata, scf_data* scfdata, std::vector<b
     metadata->triangle_length = 0;
     metadata->non_screened_pq_indices_count = new std::vector<int>(metadata->p, 0);
     metadata->sparse_p_start_indices = new std::vector<int>(metadata->p, 0);
-    metadata->screened_triangular_indicies = new std::vector<int>(metadata->p * metadata->p, 0);
+    metadata->screened_triangular_indicies = new std::vector<int>(metadata->p * metadata->p, -1);
     scfdata->non_zero_coefficients = new std::vector<std::vector<double>>();
 
     std::vector<bool>& basis_function_screen_data = *basis_function_screen_matrix;
